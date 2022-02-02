@@ -28,7 +28,7 @@
       $PDiseases = $_POST['PDiseases'];
 
 
-      if(!empty($PFirst_name) && !empty($PEmail) && !empty($PPassword) && !empty($PRe_Password) && !empty($PLast_name) && !empty($PDOB) && !empty($PPhone_number))
+      if(!empty($PUsername) && !empty($PEmail) && !empty($PPassword) && !empty($PRe_Password))
       {
           
           $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
@@ -97,11 +97,11 @@
           
           <div class="input-box">
             <span class="details" name='PPassword'>Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details" name='PRe_Password'>Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="password" placeholder="Confirm your password" required>
           </div>
         </div>
         
