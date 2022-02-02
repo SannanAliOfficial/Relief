@@ -22,20 +22,6 @@
 	die;      
   }
 
-  if($_SERVER['REQUEST_METHOD'] == "POST")
-  {
-    
-    $NewsletterEmail = $_POST['NewsletterEmail'];
-      
-	$query2 = "insert into Newsletter (NewsletterEmail) values('$NewsletterEmail')";
-    mysqli_query($rdatabase,$query2);
-    header("Location: index.php");
-	die;      
-  }
-
-
-
-
 ?>
 
 <!doctype html>
