@@ -9,15 +9,19 @@
     echo('No stable database connection');
   }
 
+  if($_POST['DPassword'] != $_POST['DRe_Password']){
+    die('Password does not match');
+  }
+
   if($_SERVER['REQUEST_METHOD'] == "POST")
   {
-      $DFirst_name = $_POST['PFirst_name'];
-      $Dlast_name = $_POST['PLast_name'];
-      $DUsername = $_POST['PUsername'];
-      $DEmail = $_POST['PEmail'];
-      $DPhone_number = $_POST['PPhone_number'];
-      $DPassword = $_POST['PPassword'];
-      $DRe_Password = $_POST['PRe_Password'];
+      $DFirst_name = $_POST['DFirst_name'];
+      $Dlast_name = $_POST['DLast_name'];
+      $DUsername = $_POST['DUsername'];
+      $DEmail = $_POST['DEmail'];
+      $DPhone_number = $_POST['DPhone_number'];
+      $DPassword = $_POST['DPassword'];
+      $DRe_Password = $_POST['DRe_Password'];
       $DSpeciality = $_POST['DSpeciality'];
 
 

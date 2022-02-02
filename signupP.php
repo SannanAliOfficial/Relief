@@ -9,6 +9,10 @@
     echo('No stable database connection');
   }
 
+  if($_POST['PPassword'] != $_POST['PRe_Password']){
+    die('Password does not match');
+  }
+
   if($_SERVER['REQUEST_METHOD'] == "POST")
   {
       $PFirst_name = $_POST['PFirst_name'];
