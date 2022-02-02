@@ -85,8 +85,8 @@
             <input type="text" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
-            <span class="details" name='PDOB'>Date of Birth</span>
-            <input type="date" placeholder="DD-MM-YYYY" required>
+            <span class="details" name='PDOB'>Year of Birth</span>
+            <input type="text" placeholder="YYYY" required>
           </div>
           <div class="input-box">
             <span class="details" name='PEmail'>Email</span>
