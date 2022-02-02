@@ -523,14 +523,7 @@
 				
 				
 				
-					<div class="col-md-6">
-					<div class="footer-widget">
-						<h3>Newsletter</h3>
-						<form method="post">
-							<input type="email" placeholder="Enter Email" name="NewsletterEmail" class="form-control mb-2">
-							<input type="submit" value="Subscribe" class="btn btn-white">
-						</form>
-					</div>
+					
 				</div>   
 				
 				
