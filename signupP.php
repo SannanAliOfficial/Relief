@@ -76,48 +76,47 @@
    </head>
 <body>
   <div class="container">
-    <div class="title">REGISTERATION</div>
+    <div class="title">SIGNUP FORM</div>
     <div class="content">
       <form method="post" action="signupP.php">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details" name='PFirst_name' >First Name</span>
-            <input type="text" placeholder="Enter your First name" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PLast_name'>Last Name</span>
-            <input type="text" placeholder="Enter your name" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PUsername'>Username</span>
-            <input type="text" placeholder="Enter your username" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PDOB'>Year of Birth</span>
-            <input type="text" placeholder="YYYY" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PEmail'>Email</span>
-            <input type="email" placeholder="Enter your email" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PPhone_number'>Phone Number</span>
-            <input type="text" placeholder="Enter your number" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PAddress'>Address</span>
-            <input type="text" placeholder="Enter Your Adress" >
-          </div>
-          
-          <div class="input-box">
-            <span class="details" name='PPassword'>Password</span>
-            <input type="password" placeholder="Enter your password" >
-          </div>
-          <div class="input-box">
-            <span class="details" name='PRe_Password'>Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" >
-          </div>
+        <div class="input-box">
+          <span class="details" name='PFirst_name' >First Name</span>
+          <input type="text" placeholder="Enter your First name" >
         </div>
+        <div class="input-box">
+          <span class="details" name='PLast_name'>Last Name</span>
+          <input type="text" placeholder="Enter your name" >
+        </div>
+        <div class="input-box">
+          <span class="details" name='PUsername'>Username</span>
+          <input type="text" placeholder="Enter your username" >
+        </div>
+        <div class="input-box">
+          <span class="details" name='PDOB'>Year of Birth</span>
+          <input type="text" placeholder="YYYY" >
+        </div>
+        <div class="input-box">
+          <span class="details" name='PEmail'>Email</span>
+          <input type="email" placeholder="Enter your email" >
+        </div>
+        <div class="input-box">
+          <span class="details" name='PPhone_number'>Phone Number</span>
+          <input type="text" placeholder="Enter your number" >
+        </div>
+        <div class="input-box">
+          <span class="details" name='PAddress'>Address</span>
+          <input type="text" placeholder="Enter Your Adress" >
+        </div>
+          
+        <div class="input-box">
+          <span class="details" name='PPassword'>Password</span>
+          <input type="password" placeholder="Enter your password" >
+        </div>
+        <div class="input-box">
+          <span class="details" name='PRe_Password'>Confirm Password</span>
+          <input type="password" placeholder="Confirm your password" >
+        </div>
+        
         
         <div class="input-box">
           <span for="PGender" name='PGender'>Gender</span><br>
@@ -149,9 +148,10 @@
         </div>
 
         <div class="button">
-          <input type="submit" value="REGISTERED"><br><br>
+          <input type="submit" value="REGISTER"><br><br>
           <p class="text">Already have an account?    <a href="LoginP.php">SIGN IN</a></p>
         </div>
+          
         
       </form>
     </div>
