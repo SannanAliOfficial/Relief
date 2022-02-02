@@ -386,7 +386,7 @@
 								<img src="images/team/4.jpg" alt="" >
 							</div>
 							<div class="team-info">
-								<h3>Johnathan Doe</h3>
+								<h3>Joona Doe</h3>
 								<p>General Physician</p>
 								<ul class="team-social">
 									<li> <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> </a>  </li>

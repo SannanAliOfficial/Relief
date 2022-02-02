@@ -62,7 +62,7 @@
   <div class="container">
     <div class="title">REGISTERATION</div>
     <div class="content">
-      <form action="#" method="POST">
+      <form action="signupD.php" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Fisrt Name</span>
@@ -93,31 +93,24 @@
             <input type="text" placeholder="Confirm your password" name="DRe_Password" required>
           </div>
         </div>
-        <div class="gender-details">
-          <input type="radio" name="DSpeciality" id="dot-1">
-          <input type="radio" name="DSpeciality" id="dot-2">
-          <input type="radio" name="DSpeciality" id="dot-3">
-          <input type="radio" name="DSpeciality" id="dot-4">
-          <span class="gender-title">Please Select your Speciality</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">CardioVascular</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Pulmonologist</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Endocrinologist</span>
-            </label>
-            <label for="dot-4">
-              <span class="dot four"></span>
-              <span class="gender">General Physician</span>
-              </label>
-          </div>
+        
+        <div class="input-box">
+          <span for="Dspeciality" name='DSpeciality'>Gender</span><br>
+          <select style="margin-bottom: 15px;
+          width: calc(100% / 2 - 20px); height: 45px;
+          outline: none;
+          font-size: 16px;
+          border-radius: 5px;
+          padding-left: 15px;
+          border: 1px solid #ccc;
+          border-bottom-width: 2px;" name="DSpeciality" id="DSpeciality" class="details">
+            <option value="C">CardioVascular</option>
+            <option value="E">Endocrinologist</option>
+            <option value="P">Pulmonologist</option>
+            <option value="GP">General Physician</option>
+          </select>
         </div>
+
         <div class="button">
           <input type="submit" value="REGISTERED"><br><br>
           <p class="text">Already have an account?<a href="LoginD.php">SIGN IN</a></p>

@@ -226,7 +226,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="POST">
+    <form method="POST" action="LoginP.php">
         <div class="container">
             <dive class="formWraper">
     

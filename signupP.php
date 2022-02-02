@@ -64,7 +64,7 @@
   <div class="container">
     <div class="title">REGISTERATION</div>
     <div class="content">
-      <form method="POST">
+      <form method="POST" action="signupP.php">
         <div class="user-details">
           <div class="input-box">
             <span class="details" name='PFirst_name' >First Name</span>
@@ -105,26 +105,22 @@
           </div>
         </div>
         
-        <div class="gender-details">
-          <input type="radio" name="PGender" id="M">
-          <input type="radio" name="PGender" id="F">
-          <input type="radio" name="PGender" id="O">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="M">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="F">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="O">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
+        <div class="input-box">
+          <span for="PGender" name='PGender'>Gender</span><br>
+          <select style="margin-bottom: 15px;
+          width: calc(100% / 2 - 20px); height: 45px;
+          outline: none;
+          font-size: 16px;
+          border-radius: 5px;
+          padding-left: 15px;
+          border: 1px solid #ccc;
+          border-bottom-width: 2px;" name="PGender" id="PGender" class="details">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
         </div>
+        
 
         <div>
           <span class="details" style="font-weight: 500;">Diseases that Mainly applies to you:</span><br>
