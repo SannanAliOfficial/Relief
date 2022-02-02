@@ -28,19 +28,19 @@
       $PDiseases = $_POST['PDiseases'];
 
 
-      if(!empty($PPassword) && !empty($PRe_Password))
+      if(empty($PPassword) && empty($PRe_Password))
       {
-          
-          $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
-          mysqli_query($rdatabase,$query);
-
-          header("Location: PPortal.html");
-          die;      
+        echo('Please fill all fields');
+        die; 
           
       }else
       {
-        echo('Please fill all fields');
+        $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
+        mysqli_query($rdatabase,$query);
+
+        header("Location: PPortal.html");
         die;  
+         
       }
   }
 
