@@ -28,7 +28,7 @@
       $PDiseases = $_POST['PDiseases'];
 
 
-      if(isset($_GET['PFirst_name']) && isset($_GET['PLast_name']) && isset($_GET['PUsername']) && isset($_GET['PDOB']) && isset($_GET['PEmail']) && isset($_GET['PPhone_number']) && isset($_GET['PAddress']) && isset($_GET['PPassword']) && isset($_GET['PRe_Password']) && isset($_GET['PGender']) && isset($_GET['PDiseases']))
+      if(isset($_POST['PFirst_name']) && isset($_POST['PLast_name']) && isset($_POST['PUsername']) && isset($_POST['PDOB']) && isset($_POST['PEmail']) && isset($_POST['PPhone_number']) && isset($_POST['PAddress']) && isset($_POST['PPassword']) && isset($_POST['PRe_Password']) && isset($_POST['PGender']) && isset($_POST['PDiseases']))
       {
         $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
         mysqli_query($rdatabase,$query);
