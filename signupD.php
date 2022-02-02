@@ -52,6 +52,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="icon" href="images/logo.png">
+    <title>SignUp Form | RELIEF </title>
     <meta charset="UTF-8">
     <!---<title> Responsive Registration Form  </title>--->
     <link rel="stylesheet" href="styles.css">
