@@ -419,7 +419,7 @@
 						<h3>Get Free Consultation on how we can Help You!</h3>
 						</div>
 						
-						<form method="post">
+						<form method="post" action="index.php">
 							
 							<div class="row">
 								<div class="col-md-6">
