@@ -16,7 +16,7 @@
     $A_Subject = $_POST['A_Subject'];
     $A_Message = $_POST['A_Message'];
       
-	$query1 = "insert into Consult (A_Name, A_Email, A_Subject, A_Message) values('$A_Name','$A_Email', '$A_Subject','$A_Message)";
+	$query1 = "INSERT INTO Consult (A_Name, A_Email, A_Subject, A_Message) VALUES('$A_Name','$A_Email', '$A_Subject','$A_Message)";
     mysqli_query($rdatabase,$query1);
     header("Location: index.php");
 	die;      
