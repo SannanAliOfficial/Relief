@@ -28,20 +28,26 @@
       $PDiseases = $_POST['PDiseases'];
 
 
-      if(empty($PPassword) && empty($PRe_Password))
-      {
-        echo('Please fill all fields');
-        die; 
-          
-      }else
-      {
-        $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
-        mysqli_query($rdatabase,$query);
+      $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
+      mysqli_query($rdatabase,$query);
 
-        header("Location: PPortal.html");
-        die;  
+      header("Location: PPortal.html");
+      die;  
+
+      #if(empty($PPassword) && empty($PRe_Password))
+      #{
+      #  echo('Please fill all fields');
+      #  die; 
+          
+      #}else
+      #{
+      #  $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
+      #  mysqli_query($rdatabase,$query);
+
+       # header("Location: PPortal.html");
+        #die;  
          
-      }
+      #}
   }
 
 
