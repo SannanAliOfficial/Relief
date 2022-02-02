@@ -86,7 +86,7 @@
           </div>
           <div class="input-box">
             <span class="details" name='PDOB'>Date of Birth</span>
-            <input type="text" placeholder="DD-MM-YYYY" required>
+            <input type="date" placeholder="DD-MM-YYYY" required>
           </div>
           <div class="input-box">
             <span class="details" name='PEmail'>Email</span>
