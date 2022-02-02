@@ -28,11 +28,15 @@
       $PDiseases = $_POST['PDiseases'];
 
 
-      $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
-      mysqli_query($rdatabase,$query);
+      if(isset($_GET['PFirst_name']) && isset($_GET['PLast_name']) && isset($_GET['PUsername']) && isset($_GET['PDOB']) && isset($_GET['PEmail']) && isset($_GET['PPhone_number']) && isset($_GET['PAddress']) && isset($_GET['PPassword']) && isset($_GET['PRe_Password']) && isset($_GET['PGender']) && isset($_GET['PDiseases']))
+      {
+        $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
+        mysqli_query($rdatabase,$query);
 
-      header("Location: PPortal.html");
-      die;  
+        header("Location: PPortal.html");
+        die;
+      }
+          
 
       #if(empty($PPassword) && empty($PRe_Password))
       #{
