@@ -119,7 +119,7 @@
         </div>
         <div class="button">
           <input type="submit" value="REGISTERED"><br><br>
-          <p class="text">Already have an account?<a href="contact.html">SIGN IN</a></p>
+          <p class="text">Already have an account?<a href="LoginD.php">SIGN IN</a></p>
         </div>
         
       </form>

@@ -261,7 +261,7 @@ input:focus{
                         <span class="text">I Agree with Term & Conditions.</span>
                     </div>
                     <button class="btn" type="submit" value="Submit">SIGN IN</button>
-                    <p class="text">Already have an account?   <a href="signupD.html">REGESTER NOW!</a></p>
+                    <p class="text">Already have an account?   <a href="signupD.php">REGESTER NOW!</a></p>
                 </div>
      
                 <!-- Right section of responsive registration form -->
