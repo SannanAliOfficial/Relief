@@ -36,6 +36,10 @@
         header("Location: PPortal.html");
         die;
       }
+
+      else{
+        echo ("variables are being fed empty");
+      }
           
 
       #if(empty($PPassword) && empty($PRe_Password))
@@ -78,40 +82,40 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details" name='PFirst_name' >First Name</span>
-            <input type="text" placeholder="Enter your First name" required>
+            <input type="text" placeholder="Enter your First name" >
           </div>
           <div class="input-box">
             <span class="details" name='PLast_name'>Last Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" >
           </div>
           <div class="input-box">
             <span class="details" name='PUsername'>Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Enter your username" >
           </div>
           <div class="input-box">
             <span class="details" name='PDOB'>Year of Birth</span>
-            <input type="text" placeholder="YYYY" required>
+            <input type="text" placeholder="YYYY" >
           </div>
           <div class="input-box">
             <span class="details" name='PEmail'>Email</span>
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" placeholder="Enter your email" >
           </div>
           <div class="input-box">
             <span class="details" name='PPhone_number'>Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" >
           </div>
           <div class="input-box">
             <span class="details" name='PAddress'>Address</span>
-            <input type="text" placeholder="Enter Your Adress" required>
+            <input type="text" placeholder="Enter Your Adress" >
           </div>
           
           <div class="input-box">
             <span class="details" name='PPassword'>Password</span>
-            <input type="password" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" >
           </div>
           <div class="input-box">
             <span class="details" name='PRe_Password'>Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" required>
+            <input type="password" placeholder="Confirm your password" >
           </div>
         </div>
         
