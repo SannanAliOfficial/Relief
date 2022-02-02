@@ -70,7 +70,7 @@
   <div class="container">
     <div class="title">REGISTERATION</div>
     <div class="content">
-      <form method="POST" action="signupP.php">
+      <form method="post" action="signupP.php">
         <div class="user-details">
           <div class="input-box">
             <span class="details" name='PFirst_name' >First Name</span>
