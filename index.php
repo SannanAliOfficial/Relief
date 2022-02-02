@@ -18,7 +18,8 @@
       
 	$query1 = "insert into Consult (A_Name, A_Email, A_Subject, A_Message) values('$A_Name','$A_Email', '$A_Subject','$A_Message)";
     mysqli_query($rdatabase,$query1);
-    die;      
+    header("Location: index.php");
+	die;      
   }
 
   if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -28,7 +29,8 @@
       
 	$query2 = "insert into Newsletter (NewsletterEmail) values('$NewsletterEmail')";
     mysqli_query($rdatabase,$query2);
-    die;      
+    header("Location: index.php");
+	die;      
   }
 
 
