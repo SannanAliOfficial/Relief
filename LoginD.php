@@ -19,7 +19,7 @@
 		{
 
 			//read from database
-			$query = "select * from Doctors where DUsername = '$DUsername' limit 1";
+			$query = "SELECT * FROM Doctors WHERE DUsername = '$DUsername' lIMIT 1";
 			$result = mysqli_query($rdatabase, $query);
 
 			if($result)

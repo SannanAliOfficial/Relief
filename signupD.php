@@ -28,7 +28,7 @@
       if(!empty($DFirst_name) && !empty($DEmail) && !empty($DPassword) && !empty($DRe_Password) && !empty(DPLast_name) && !empty($DPhone_number))
       {
           
-          $query = "insert into Doctors (DFirst_name, DLast_name, DUsername , DEmail, DPhone_number, DPassword, DRe_Password, DSpeciality) values('$DFirst_name','$DLast_name', '$DUsername','$DEmail', '$DPhone_number','$DPassword', '$DRe_Password' , '$DSpeciality')";
+          $query = "INSERT INTO Doctors (DFirst_name, DLast_name, DUsername , DEmail, DPhone_number, DPassword, DRe_Password, DSpeciality) VALUES ('$DFirst_name','$DLast_name', '$DUsername','$DEmail', '$DPhone_number','$DPassword', '$DRe_Password' , '$DSpeciality')";
           mysqli_query($rdatabase,$query);
 
           header("Location: DPortal.html");

@@ -19,7 +19,7 @@
 		{
 
 			//read from database
-			$query = "select * from Pateints where PUsername = '$PUsername' limit 1";
+			$query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' LIMIT 1";
 			$result = mysqli_query($rdatabase, $query);
 
 			if($result)
