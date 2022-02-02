@@ -16,7 +16,7 @@
   if($_SERVER['REQUEST_METHOD'] == "POST")
   {
       $PFirst_name = $_POST['PFirst_name'];
-      $Plast_name = $_POST['PLast_name'];
+      $PLast_name = $_POST['PLast_name'];
       $PUsername = $_POST['PUsername'];
       $PDOB = $_POST['PDOB'];
       $PEmail = $_POST['PEmail'];
