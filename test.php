@@ -78,7 +78,7 @@
     <form method="post" action="test.php">
         <div class="container">
             <p class="title">SIGNUP FORM</p><br>
-            <div style="width: 50%; float: left; position: fixed;">
+            <div style=" position: fixed;">
                 <p class="input-box">
                     <label class="details" >First Name</label><br>
                     <input style="margin-bottom: 10px;
