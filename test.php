@@ -134,11 +134,6 @@
         </p>
 
         <p>
-            <label>Email</label>
-            <input type="text" name="PEmail">
-        </p>
-
-        <p>
             <span for="PGender" name='PGender'>Gender</span><br>
             <select  name="PGender" id="PGender">
               <option value="M">Male</option>
