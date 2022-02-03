@@ -80,7 +80,7 @@
             <p class="title">SIGNUP FORM</p><br>
             <div>
                 <p class="input-box">
-                    <label class="details" >First Name</label><br>
+                    <label class="details" >First Name:    </label>
                     <input style="margin-bottom: 10px;
                     width: calc(100% / 2 - 20px); height: 30px;
                     outline: none;
@@ -92,7 +92,7 @@
                 </p>
 
                 <p class="input-box">
-                    <label class="details">Last Name</label><br>
+                    <label class="details">Last Name:     </label>
                     <input style="margin-bottom: 10px;
                     width: calc(100% / 2 - 20px); height: 30px;
                     outline: none;
@@ -105,7 +105,7 @@
             </div>
 
             <p class="input-box">
-                <label class="details">Username Name</label><br>
+                <label class="details">Username Name: </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -117,7 +117,7 @@
             </p>
 
             <p class="input-box">
-                <label class="details">Year of Birth</label><br>
+                <label class="details">Year of Birth: </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -129,7 +129,7 @@
             </p>
 
             <p class="input-box">
-                <label class="details">Email</label><br>
+                <label class="details">Email:          </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -141,7 +141,7 @@
             </p>
 
             <p class="input-box">
-                <label class="details">Phone number</label><br>
+                <label class="details">Phone number:  </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -153,7 +153,7 @@
             </p>
 
             <p class="input-box">
-                <label class="details">Address</label><br>
+                <label class="details">Address:       </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -165,7 +165,7 @@
             </p>
 
             <p class="input-box">
-                <label class="details">Password</label><br>
+                <label class="details">Password:      </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -177,7 +177,7 @@
             </p>
 
             <p class="input-box">
-                <label class="details">Re Password</label><br>
+                <label class="details">Re Password:   </label>
                 <input style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
