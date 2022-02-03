@@ -25,7 +25,7 @@
       $DSpeciality = $_POST['DSpeciality'];
 
 
-      if(!empty($DFirst_name) && !empty($DEmail) && !empty($DPassword) && !empty($DRe_Password) && !empty($DLast_name) && !empty($DPhone_number))
+      if(isset($_POST['DFirst_name']) && isset($_POST['DLast_name']) && isset($_POST['DUsername']) && isset($_POST['DEmail']) && isset($_POST['DPhone_number']) && isset($_POST['DPassword']) && isset($_POST['DRe_Password']) && isset($_POST['DSpeciality']))
       {
           
           $query = "INSERT INTO Doctors (DFirst_name, DLast_name, DUsername , DEmail, DPhone_number, DPassword, DRe_Password, DSpeciality) VALUES ('$DFirst_name','$DLast_name', '$DUsername','$DEmail', '$DPhone_number','$DPassword', '$DRe_Password' , '$DSpeciality')";
