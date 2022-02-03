@@ -80,7 +80,7 @@
             <p class="title">SIGNUP FORM</p><br>
             <div>
                 <p class="input-box">
-                    <label class="details" >First Name</label>
+                    <label class="details" >First Name</label><br>
                     <input style="margin-bottom: 10px;
                     width: calc(100% / 2 - 20px); height: 30px;
                     outline: none;
