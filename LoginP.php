@@ -225,56 +225,57 @@ input:focus{
 </style>
  
 <body>
-    
+    <form method="GET" action="LoginP.php">
         <div class="container">
             <dive class="formWraper">
-    
+     
                 <!-- Left section of responsive registration form -->
-    
+     
                 <div class="formDiv">
-                    <h2>Login As a Patient</h2>
-                    <p class="text"> Log In with Social Media</p>
-    
-                <!-- Font Awesome Icons -->
+                    <h2>Login Account</h2>
+                    <p class="text"> Sign In with Social Media</p>
+     
+                 <!-- Font Awesome Icons -->
                     <div class="socialBtn">
                         <div class="facebook icon"><i class="fab fa-facebook-f"></i></div>
                         <div class="twitter icon"><i class="fab fa-twitter"></i></div>
                         <div class="instagram icon"><i class="fab fa-instagram"></i></i></div>
                     </div>
-                    
+                     
                     <!--Horizontal Line-->
                     <hr>
                     <div class="orDiv">Or</div>
-
-                    <form method="get" action="LoginP.php">
-                        <p class="text">Log In with your Account</p>
-                        <p>
-                            <label> Username:  </label>
-                            <input type="text" name="PUsername" required>
-                        </p>
-                        <p>
-                            <label> Password:  </label>
-                            <input type="password" name="PPassword" required>
-                        </p>
-                        <p>
-                            <input type="submit" value="LOGIN">
-                        </p>
-                        <p>Don't have an account?    <a href="signupP.php">SIGN IN</a></p>
-                    </form>
+     
+                    <p class="text">Sign In with your Account</p>
+                    <div class="formGroup">
+                        <i class="far fa-user"></i>
+                        <input type="text" name='PUsername' placeholder="UserName">
+                    </div>
+                    
+                    <div class="formGroup">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name='PPassword' placeholder="Password">
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <span class="text">I Agree with Term & Conditions.</span>
+                    </div>
+                    <button class="btn" type="submit" value="Submit">SIGN IN</button>
+                    <p class="text">Already have an account?   <a href="signupP.php">REGESTER NOW!</a></p>
                 </div>
-    
+     
                 <!-- Right section of responsive registration form -->
                 <div class="welcomeDiv">
                     <h2><b>Welcome Back!</b></h2>
                     <p class="text"><b>Get in touch with us for our
                         <br> news letter and more updates.</b></p>
                     
-
-                </div>
     
+                </div>
+     
             </div>
         </div>
-    
+    </form>
  
 </body>
  
