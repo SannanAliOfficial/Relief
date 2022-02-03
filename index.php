@@ -110,7 +110,7 @@
 							<h1 class="text-white">We Provide The Best Preventative Medicine Measures</h1>
 							<p class="text-white"> The purpose is to build a Medical Application with the goal of connecting at-risk or
 								high-risk patients of Diabetes and Cardiovascular diseases with their doctors.</p>
-							<a href="signupP.php"  class="btn btn-white" target="_blank">JOIN US as a Patient</a>
+							<a href="test.php"  class="btn btn-white" target="_blank">JOIN US as a Patient</a>
 							<a href="signupD.php"  class="btn btn-white" target="_blank">JOIN US as a Doctor</a>
 						</div>
 					</div>
