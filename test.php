@@ -77,7 +77,7 @@
 <body>
     <form method="post" action="test.php" style=" position: fixed;">
         <div class="container">
-            <p class="title">SIGNUP FORM</p>
+            <p class="title">SIGNUP FORM</p><br>
             <div>
                 <p class="input-box">
                     <label class="details" >First Name</label>
