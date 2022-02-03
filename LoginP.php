@@ -15,7 +15,7 @@
 		$PUsername = $_POST['PUsername'];
 		$PPassword = $_POST['PPassword'];
 
-		if(!empty($PUsername) && !empty($PPassword))
+		if(isset($_POST['PUsername']) && isset($_POST['PPassword']))
 		{
 
 			//read from database
