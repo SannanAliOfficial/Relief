@@ -249,15 +249,15 @@ input:focus{
 
                     <form method="POST" action="LoginP.php">
                         <p class="text">Log In with your Account</p>
-                        <div class="formGroup">
+                        <p class="formGroup">
                             <i class="far fa-user"></i>
                             <input type="text" username="username" id="name" name="PUsername" required placeholder="UserName">
-                        </div>
+                        </p>
                         
-                        <div class="formGroup">
+                        <p class="formGroup">
                             <i class="fas fa-lock"></i>
                             <input type="password" name="password" id="password" name="PPassword" required placeholder="Password">
-                        </div>
+                        </p>
                         <div class="checkBox">
                             <input type="checkbox" name="checkbox" id="checkbox">
                             <span class="text">I Agree with Term & Conditions.</span>
