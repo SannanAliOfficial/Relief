@@ -256,6 +256,9 @@ input:focus{
                             <label> Password:  </label>
                             <input type="password" name="PPassword" required>
                         </p>
+                        <p>
+                            <input type="submit" value="LOGIN">
+                        </p>
                     </form>
                 </div>
     
