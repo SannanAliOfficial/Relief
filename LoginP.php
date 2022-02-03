@@ -248,21 +248,14 @@ input:focus{
 
                     <form method="get" action="LoginP.php">
                         <p class="text">Log In with your Account</p>
-                        <p class="formGroup">
-                            <i class="far fa-user"></i>
-                            <input type="text" name="PUsername" required placeholder="UserName">
+                        <p>
+                            <label> Username:  </label>
+                            <input type="text" name="PUsername" required>
                         </p>
-                        
-                        <p class="formGroup">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" name="PPassword" required placeholder="Password">
+                        <p>
+                            <label> Password:  </label>
+                            <input type="password" name="PPassword" required>
                         </p>
-                        <div class="checkBox">
-                            <input type="checkbox" name="checkbox" >
-                            <span class="text">I Agree with Term & Conditions.</span>
-                        </div>
-                        <button class="btn" type="submit" value="Submit">SIGN IN</button>
-                        <p class="text">Don't have an account?   <a href="signupP.php">REGESTER NOW!</a></p>
                     </form>
                 </div>
     
