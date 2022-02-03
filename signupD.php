@@ -59,7 +59,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <form method="post" action="test.php" style=" position: fixed;">
+    <form method="post" action="signupD.php" style=" position: fixed;">
         <div class="container">
           <p class="title">SIGNUP FORM</p><br>
           <div>
