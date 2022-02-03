@@ -81,7 +81,7 @@
             <p class="input-box">
                 <label class="details" >First Name</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -93,7 +93,7 @@
             <p class="input-box">
                 <label class="details">Last Name</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -105,7 +105,7 @@
             <p class="input-box">
                 <label class="details">Username Name</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -117,7 +117,7 @@
             <p class="input-box">
                 <label class="details">Year of Birth</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -129,7 +129,7 @@
             <p class="input-box">
                 <label class="details">Email</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -141,7 +141,7 @@
             <p class="input-box">
                 <label class="details">Phone number</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -153,7 +153,7 @@
             <p class="input-box">
                 <label class="details">Address</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -165,7 +165,7 @@
             <p class="input-box">
                 <label class="details">Password</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -177,7 +177,7 @@
             <p class="input-box">
                 <label class="details">Re Password</label><br>
                 <input style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
@@ -189,7 +189,7 @@
             <p class="input-box">
                 <span for="PGender" name='PGender' class="details">Gender</span><br>
                 <select style="margin-bottom: 15px;
-                width: calc(100% / 2 - 20px); height: 40px;
+                width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
                 font-size: 16px;
                 border-radius: 5px;
