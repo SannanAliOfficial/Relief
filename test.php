@@ -83,7 +83,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -95,7 +95,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -107,7 +107,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -119,7 +119,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -131,7 +131,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -143,7 +143,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -155,7 +155,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -167,7 +167,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -179,7 +179,7 @@
                 <input style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
@@ -191,7 +191,7 @@
                 <select style="margin-bottom: 15px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 5px;
                 padding-left: 15px;
                 border: 1px solid #ccc;
