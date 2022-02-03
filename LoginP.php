@@ -226,7 +226,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="POST" action="LoginP.php">
+    
         <div class="container">
             <dive class="formWraper">
     
@@ -246,23 +246,25 @@ input:focus{
                     <!--Horizontal Line-->
                     <hr>
                     <div class="orDiv">Or</div>
-    
-                    <p class="text">Log In with your Account</p>
-                    <div class="formGroup">
-                        <i class="far fa-user"></i>
-                        <input type="text" username="username" id="name" name="PUsername" required placeholder="UserName">
-                    </div>
-                    
-                    <div class="formGroup">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" name="password" id="password" name="PPassword" required placeholder="Password">
-                    </div>
-                    <div class="checkBox">
-                        <input type="checkbox" name="checkbox" id="checkbox">
-                        <span class="text">I Agree with Term & Conditions.</span>
-                    </div>
-                    <button class="btn" type="submit" value="Submit">SIGN IN</button>
-                    <p class="text">Don't have an account?   <a href="signupP.php">REGESTER NOW!</a></p>
+
+                    <form method="POST" action="LoginP.php">
+                        <p class="text">Log In with your Account</p>
+                        <div class="formGroup">
+                            <i class="far fa-user"></i>
+                            <input type="text" username="username" id="name" name="PUsername" required placeholder="UserName">
+                        </div>
+                        
+                        <div class="formGroup">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" id="password" name="PPassword" required placeholder="Password">
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <span class="text">I Agree with Term & Conditions.</span>
+                        </div>
+                        <button class="btn" type="submit" value="Submit">SIGN IN</button>
+                        <p class="text">Don't have an account?   <a href="signupP.php">REGESTER NOW!</a></p>
+                    </form>
                 </div>
     
                 <!-- Right section of responsive registration form -->
@@ -276,7 +278,7 @@ input:focus{
     
             </div>
         </div>
-    </form>
+    
  
 </body>
  
