@@ -255,7 +255,7 @@ input:focus{
                         
                         <p class="formGroup">
                             <i class="fas fa-lock"></i>
-                            <input type="password" name="password" id="password" name="PPassword" required placeholder="Password">
+                            <input type="password" username="password" id="password" name="PPassword" required placeholder="Password">
                         </p>
                         <div class="checkBox">
                             <input type="checkbox" name="checkbox" id="checkbox">
