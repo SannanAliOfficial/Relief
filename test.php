@@ -187,7 +187,7 @@
             </p>
 
             <p class="input-box">
-                <span for="PGender" name='PGender' class="details">Gender</span><br>
+                <span for="PGender" name='PGender' class="details">Gender</span>
                 <select style="margin-bottom: 10px;
                 width: calc(100% / 2 - 20px); height: 30px;
                 outline: none;
@@ -204,7 +204,7 @@
             
     
             <p class="input-box">
-                <span class="details" >Diseases that Mainly applies to you:</span><br>
+                <span class="details" >Diseases that Mainly applies to you:</span>
                 <input type="checkbox" name='PDiseases' id='D' value="D">
                 <label for="D">Diabates</label><br>
                 <input type="checkbox" name='PDiseases' id='BP' value="BP">
