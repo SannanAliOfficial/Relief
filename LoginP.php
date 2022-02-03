@@ -13,9 +13,8 @@
 	{
 		//something was posted
 		$PUsername = $_GET['PUsername'];
-		$PPassword = $_GET['PPassword'];
 
-		if(isset($_GET['PUsername']) && isset($_GET['PPassword']))
+		if(isset($_GET['PUsername']))
 		{
 
 			//read from database
