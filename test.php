@@ -88,76 +88,79 @@
 
 <body>
     <form method="post" action="test.php">
-        <p>
-            <label>First Name</label>
-            <input type="text" name="PFirst_name">
-        </p>
+        <div class="container">
+            <p>
+                <label>First Name</label>
+                <input type="text" name="PFirst_name">
+            </p>
 
-        <p>
-            <label>Last Name</label>
-            <input type="text" name="PLast_name">
-        </p>
+            <p>
+                <label>Last Name</label>
+                <input type="text" name="PLast_name">
+            </p>
 
-        <p>
-            <label>Username Name</label>
-            <input type="text" name="PUsername">
-        </p>
+            <p>
+                <label>Username Name</label>
+                <input type="text" name="PUsername">
+            </p>
 
-        <p>
-            <label>Year of Birth</label>
-            <input type="text" name="PDOB">
-        </p>
+            <p>
+                <label>Year of Birth</label>
+                <input type="text" name="PDOB">
+            </p>
 
-        <p>
-            <label>Email</label>
-            <input type="text" name="PEmail">
-        </p>
+            <p>
+                <label>Email</label>
+                <input type="text" name="PEmail">
+            </p>
 
-        <p>
-            <label>Phone number</label>
-            <input type="text" name="PPhone_number">
-        </p>
+            <p>
+                <label>Phone number</label>
+                <input type="text" name="PPhone_number">
+            </p>
 
-        <p>
-            <label>Address</label>
-            <input type="text" name="PAddress">
-        </p>
+            <p>
+                <label>Address</label>
+                <input type="text" name="PAddress">
+            </p>
 
-        <p>
-            <label>Password</label>
-            <input type="text" name="PPassword">
-        </p>
+            <p>
+                <label>Password</label>
+                <input type="text" name="PPassword">
+            </p>
 
-        <p>
-            <label>Re Password</label>
-            <input type="text" name="PRe_Password">
-        </p>
+            <p>
+                <label>Re Password</label>
+                <input type="text" name="PRe_Password">
+            </p>
 
-        <p>
-            <span for="PGender" name='PGender'>Gender</span><br>
-            <select  name="PGender" id="PGender">
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-              <option value="O">Others</option>
-            </select>
-        </p>
-          
-  
-        <p>
-            <span class="details" style="font-weight: 500;">Diseases that Mainly applies to you:</span><br>
-            <input type="checkbox" name='PDiseases' id='D' value="D">
-            <label for="D">Diabates</label><br>
-            <input type="checkbox" name='PDiseases' id='BP' value="BP">
-            <label for="BP">Blood Pressure</label><br>
-            <input type="checkbox" name='PDiseases' id='HR' value="HR">
-            <label for="HR">Heart Rate Issues</label><br>
-            <input type="checkbox" name='PDiseases' id='OS' value="OS">
-            <label for="OS">Oxygen Saturation Issues</label>
-        </p>
+            <p>
+                <span for="PGender" name='PGender'>Gender</span><br>
+                <select  name="PGender" id="PGender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Others</option>
+                </select>
+            </p>
+            
+    
+            <p>
+                <span class="details" style="font-weight: 500;">Diseases that Mainly applies to you:</span><br>
+                <input type="checkbox" name='PDiseases' id='D' value="D">
+                <label for="D">Diabates</label><br>
+                <input type="checkbox" name='PDiseases' id='BP' value="BP">
+                <label for="BP">Blood Pressure</label><br>
+                <input type="checkbox" name='PDiseases' id='HR' value="HR">
+                <label for="HR">Heart Rate Issues</label><br>
+                <input type="checkbox" name='PDiseases' id='OS' value="OS">
+                <label for="OS">Oxygen Saturation Issues</label>
+            </p>
 
-        <p>
-            <input type="submit" value="register">
-        </p>
+            <p>
+                <input type="submit" value="register">
+            </p>
+        </div>
+
 
     </form>
 </body>
