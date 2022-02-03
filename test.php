@@ -75,12 +75,12 @@
 </head>
 
 <body>
-    <form method="post" action="test.php">
+    <form method="post" action="test.php" style=" position: fixed;">
         <div class="container">
-            <p class="title">SIGNUP FORM</p><br>
-            <div style=" position: fixed;">
+            <p class="title">SIGNUP FORM</p>
+            <div>
                 <p class="input-box">
-                    <label class="details" >First Name</label><br>
+                    <label class="details" >First Name</label>
                     <input style="margin-bottom: 10px;
                     width: calc(100% / 2 - 20px); height: 30px;
                     outline: none;
