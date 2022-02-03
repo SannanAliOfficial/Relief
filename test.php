@@ -89,52 +89,52 @@
 <body>
     <form method="post" action="test.php">
         <div class="container">
-            <p>
+            <p class="content input-box">
                 <label>First Name</label>
                 <input type="text" name="PFirst_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Last Name</label>
                 <input type="text" name="PLast_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Username Name</label>
                 <input type="text" name="PUsername" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Year of Birth</label>
                 <input type="text" name="PDOB" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Email</label>
                 <input type="Email" name="PEmail" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Phone number</label>
                 <input type="text" name="PPhone_number" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Address</label>
                 <input type="text" name="PAddress" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Password</label>
                 <input type="password" name="PPassword" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <label>Re Password</label>
                 <input type="password" name="PRe_Password" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
-            <p>
+            <p class="content input-box">
                 <span for="PGender" name='PGender'>Gender</span><br>
                 <select  name="PGender" id="PGender" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
                 <option value="M">Male</option>
@@ -144,7 +144,7 @@
             </p>
             
     
-            <p>
+            <p class="content input-box">
                 <span class="details" style="font-weight: 500;">Diseases that Mainly applies to you:</span><br>
                 <input type="checkbox" name='PDiseases' id='D' value="D">
                 <label for="D">Diabates</label><br>
