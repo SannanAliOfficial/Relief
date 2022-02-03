@@ -72,7 +72,7 @@
               border-radius: 5px;
               padding-left: 10px;
               border: 1px solid #ccc;
-              border-bottom-width: 2px;" type="text" name="DFirst_name" >
+              border-bottom-width: 2px;" type="text" name="DFirst_name" required>
             </p>
 
             <p class="input-box">
@@ -84,7 +84,7 @@
               border-radius: 5px;
               padding-left: 10px;
               border: 1px solid #ccc;
-              border-bottom-width: 2px;" type="text" name="DLast_name" >
+              border-bottom-width: 2px;" type="text" name="DLast_name" required>
             </p>
           </div>
 
@@ -97,7 +97,7 @@
             border-radius: 5px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            border-bottom-width: 2px;" type="text" name="DUsername" >
+            border-bottom-width: 2px;" type="text" name="DUsername" required>
           </p>
 
           <p class="input-box">
@@ -109,7 +109,7 @@
             border-radius: 5px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            border-bottom-width: 2px;" type="Email" name="DEmail" >
+            border-bottom-width: 2px;" type="Email" name="DEmail" required>
           </p>
 
           <p class="input-box">
@@ -121,7 +121,7 @@
             border-radius: 5px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            border-bottom-width: 2px;" type="text" name="DPhone_number" >
+            border-bottom-width: 2px;" type="text" name="DPhone_number" required>
           </p>
 
           <p class="input-box">
@@ -133,7 +133,7 @@
             border-radius: 5px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            border-bottom-width: 2px;" type="password" name="DPassword" >
+            border-bottom-width: 2px;" type="password" name="DPassword" required>
           </p>
 
           <p class="input-box">
@@ -145,7 +145,7 @@
             border-radius: 5px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            border-bottom-width: 2px;" type="password" name="DRe_Password" >
+            border-bottom-width: 2px;" type="password" name="DRe_Password" required>
           </p>
 
           <p class="input-box">
@@ -157,7 +157,7 @@
             border-radius: 5px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            border-bottom-width: 2px;" name="DSpeciality" id="DSpeciality" >
+            border-bottom-width: 2px;" name="DSpeciality" id="DSpeciality" required>
             <option value="C">Cardiologist</option>
             <option value="E">Endocrinologist</option>
             <option value="P">Pulmonologist</option>
