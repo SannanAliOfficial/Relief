@@ -88,7 +88,7 @@
                     border-radius: 5px;
                     padding-left: 10px;
                     border: 1px solid #ccc;
-                    border-bottom-width: 2px;" type="text" name="PFirst_name" >
+                    border-bottom-width: 2px;" type="text" name="PFirst_name" required>
                 </p>
 
                 <p class="input-box">
@@ -100,7 +100,7 @@
                     border-radius: 5px;
                     padding-left: 10px;
                     border: 1px solid #ccc;
-                    border-bottom-width: 2px;" type="text" name="PLast_name" >
+                    border-bottom-width: 2px;" type="text" name="PLast_name" required>
                 </p>
             </div>
 
@@ -113,7 +113,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="text" name="PUsername" >
+                border-bottom-width: 2px;" type="text" name="PUsername" required>
             </p>
 
             <p class="input-box">
@@ -125,7 +125,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="text" name="PDOB" >
+                border-bottom-width: 2px;" type="text" name="PDOB" required>
             </p>
 
             <p class="input-box">
@@ -137,7 +137,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="Email" name="PEmail" >
+                border-bottom-width: 2px;" type="Email" name="PEmail" required>
             </p>
 
             <p class="input-box">
@@ -149,7 +149,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="text" name="PPhone_number" >
+                border-bottom-width: 2px;" type="text" name="PPhone_number" required>
             </p>
 
             <p class="input-box">
@@ -161,7 +161,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="text" name="PAddress" >
+                border-bottom-width: 2px;" type="text" name="PAddress" required>
             </p>
 
             <p class="input-box">
@@ -173,7 +173,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="password" name="PPassword" >
+                border-bottom-width: 2px;" type="password" name="PPassword" required>
             </p>
 
             <p class="input-box">
@@ -185,7 +185,7 @@
                 border-radius: 5px;
                 padding-left: 10px;
                 border: 1px solid #ccc;
-                border-bottom-width: 2px;" type="password" name="PRe_Password" >
+                border-bottom-width: 2px;" type="password" name="PRe_Password" required>
             </p>
 
             <p class="input-box">

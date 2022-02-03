@@ -168,7 +168,7 @@
 
           <div class="button">
             <input type="submit" value="REGISTER" >
-            <p class="text">Already have an account?    <a href="LoginP.php">SIGN IN</a></p>
+            <p class="text">Already have an account?    <a href="LoginD.php">SIGN IN</a></p>
           </div>
         </div>
 
