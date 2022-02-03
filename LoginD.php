@@ -30,7 +30,7 @@
 					
 					
 				}
-                header("Location: DPortal.html");
+                header("Location: table.php");
 				die;
 			}
 			

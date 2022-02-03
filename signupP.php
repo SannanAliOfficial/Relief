@@ -4,7 +4,7 @@
   $rpass = 'GAeI6ZJ9EC';
   $rdb = 'oGI7KynQVD';
     
-  if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
+  if(! $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb ))
   {
     echo('No stable database connection');
   }

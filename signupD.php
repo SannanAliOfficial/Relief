@@ -4,7 +4,7 @@
   $rpass = 'GAeI6ZJ9EC';
   $rdb = 'oGI7KynQVD';
     
-  if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
+  if(! $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb ))
   {
     echo('No stable database connection');
   }
@@ -31,7 +31,7 @@
           $query = "INSERT INTO Doctors (DFirst_name, DLast_name, DUsername , DEmail, DPhone_number, DPassword, DRe_Password, DSpeciality) VALUES ('$DFirst_name','$DLast_name', '$DUsername','$DEmail', '$DPhone_number','$DPassword', '$DRe_Password' , '$DSpeciality')";
           mysqli_query($rdatabase,$query);
 
-          header("Location: DPortal.html");
+          header("Location: table.php");
           die;      
           
       }else
