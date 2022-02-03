@@ -250,15 +250,15 @@ input:focus{
                         <p class="text">Log In with your Account</p>
                         <p class="formGroup">
                             <i class="far fa-user"></i>
-                            <input type="text" username="username" id="name" name="PUsername" required placeholder="UserName">
+                            <input type="text" name="PUsername" required placeholder="UserName">
                         </p>
                         
                         <p class="formGroup">
                             <i class="fas fa-lock"></i>
-                            <input type="password" username="password" id="password" name="PPassword" required placeholder="Password">
+                            <input type="password" name="PPassword" required placeholder="Password">
                         </p>
                         <div class="checkBox">
-                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <input type="checkbox" name="checkbox" >
                             <span class="text">I Agree with Term & Conditions.</span>
                         </div>
                         <button class="btn" type="submit" value="Submit">SIGN IN</button>
