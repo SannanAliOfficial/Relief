@@ -9,11 +9,11 @@
         echo('No stable database connection');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
 		//something was posted
-		$DUsername = $_POST['DUsername'];
-		$DPassword = $_POST['DPassword'];
+		$DUsername = $_GET['DUsername'];
+		$DPassword = $_GET['DPassword'];
 
 		if(!empty($DUsername) && !empty($DPassword))
 		{
@@ -226,7 +226,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="POST" action="LoginD.php">
+    <form method="GET" action="LoginD.php">
         <div class="container">
             <dive class="formWraper">
      
@@ -250,12 +250,12 @@ input:focus{
                     <p class="text">Sign In with your Account</p>
                     <div class="formGroup">
                         <i class="far fa-user"></i>
-                        <input type="text" username="username" id="name" name='DUsername' placeholder="UserName">
+                        <input type="text" name='DUsername' placeholder="UserName">
                     </div>
                     
                     <div class="formGroup">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="password" id="password" name='DPassword' placeholder="Password">
+                        <input type="password" name='DPassword' placeholder="Password">
                     </div>
                     <div class="checkBox">
                         <input type="checkbox" name="checkbox" id="checkbox">
