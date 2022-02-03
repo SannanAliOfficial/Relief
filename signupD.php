@@ -16,7 +16,7 @@
   if($_SERVER['REQUEST_METHOD'] == "POST")
   {
       $DFirst_name = $_POST['DFirst_name'];
-      $Dlast_name = $_POST['DLast_name'];
+      $DLast_name = $_POST['DLast_name'];
       $DUsername = $_POST['DUsername'];
       $DEmail = $_POST['DEmail'];
       $DPhone_number = $_POST['DPhone_number'];
@@ -149,7 +149,7 @@
           </p>
 
           <p class="input-box">
-            <span for="DSpeciality" name='DSpeciality' class="details">Gender</span>
+            <span for="DSpeciality" name='DSpeciality' class="details">Speciality</span>
             <select style="margin-bottom: 10px;
             width: calc(100% / 2 - 20px); height: 30px;
             outline: none;
