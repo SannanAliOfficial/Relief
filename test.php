@@ -91,52 +91,52 @@
         <div class="container">
             <p>
                 <label>First Name</label>
-                <input type="text" name="PFirst_name">
+                <input type="text" name="PFirst_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Last Name</label>
-                <input type="text" name="PLast_name">
+                <input type="text" name="PLast_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Username Name</label>
-                <input type="text" name="PUsername">
+                <input type="text" name="PUsername" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Year of Birth</label>
-                <input type="text" name="PDOB">
+                <input type="text" name="PDOB" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Email</label>
-                <input type="text" name="PEmail">
+                <input type="Email" name="PEmail" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Phone number</label>
-                <input type="text" name="PPhone_number">
+                <input type="text" name="PPhone_number" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Address</label>
-                <input type="text" name="PAddress">
+                <input type="text" name="PAddress" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Password</label>
-                <input type="text" name="PPassword">
+                <input type="password" name="PPassword" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <label>Re Password</label>
-                <input type="text" name="PRe_Password">
+                <input type="password" name="PRe_Password" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
 
             <p>
                 <span for="PGender" name='PGender'>Gender</span><br>
-                <select  name="PGender" id="PGender">
+                <select  name="PGender" id="PGender" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
                 <option value="M">Male</option>
                 <option value="F">Female</option>
                 <option value="O">Others</option>
@@ -157,7 +157,7 @@
             </p>
 
             <p>
-                <input type="submit" value="register">
+                <input type="submit" value="register" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
             </p>
         </div>
 
