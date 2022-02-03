@@ -259,6 +259,7 @@ input:focus{
                         <p>
                             <input type="submit" value="LOGIN">
                         </p>
+                        <p>Don't have an account?    <a href="signupP.php">SIGN IN</a></p>
                     </form>
                 </div>
     
