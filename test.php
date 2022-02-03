@@ -88,7 +88,7 @@
 
 <body>
     <form method="post" action="test.php">
-        <div class="container">
+        <div class="container content">
             <p class="content input-box">
                 <label>First Name</label>
                 <input type="text" name="PFirst_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
