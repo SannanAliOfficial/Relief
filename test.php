@@ -67,76 +67,135 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!--For responsive		-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		
-	<link rel="icon" href="images/logo.png">	
-	<title>RELIEF</title>
-
-	<!--Owl Carousel	-->	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"  />
-		
-		
-	<!--Bootstra CSS	-->
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-	<!--Custom Style CSS	-->
-	<link rel="stylesheet" href="css/style.css" type="text/css">	
+	<link rel="icon" href="images/logo.png">
+    <title>SignUp Form | RELIEF </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 </head>
 
 <body>
     <form method="post" action="test.php">
-        <div class="container content">
-            <p class="details input-box">
-                <label>First Name</label>
-                <input type="text" name="PFirst_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+        <div class="container">
+            <p class="title">SIGNUP FORM</p><br>
+            <p class="input-box">
+                <label class="details" >First Name</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="text" name="PFirst_name" >
             </p>
 
-            <p class="details input-box">
-                <label>Last Name</label>
-                <input type="text" name="PLast_name" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Last Name</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="text" name="PLast_name" >
             </p>
 
-            <p class="details input-box">
-                <label>Username Name</label>
-                <input type="text" name="PUsername" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Username Name</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="text" name="PUsername" >
             </p>
 
-            <p class="details input-box">
-                <label>Year of Birth</label>
-                <input type="text" name="PDOB" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Year of Birth</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="text" name="PDOB" >
             </p>
 
-            <p class="details input-box">
-                <label>Email</label>
-                <input type="Email" name="PEmail" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Email</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="Email" name="PEmail" >
             </p>
 
-            <p class="details input-box">
-                <label>Phone number</label>
-                <input type="text" name="PPhone_number" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Phone number</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="text" name="PPhone_number" >
             </p>
 
-            <p class="details input-box">
-                <label>Address</label>
-                <input type="text" name="PAddress" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Address</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="text" name="PAddress" >
             </p>
 
-            <p class="details input-box">
-                <label>Password</label>
-                <input type="password" name="PPassword" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Password</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="password" name="PPassword" >
             </p>
 
-            <p class="details input-box">
-                <label>Re Password</label>
-                <input type="password" name="PRe_Password" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <label class="details">Re Password</label><br>
+                <input style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" type="password" name="PRe_Password" >
             </p>
 
-            <p class="details input-box">
-                <span for="PGender" name='PGender'>Gender</span><br>
-                <select  name="PGender" id="PGender" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="input-box">
+                <span for="PGender" name='PGender' class="details">Gender</span><br>
+                <select style="margin-bottom: 15px;
+                width: calc(100% / 2 - 20px); height: 40px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;" name="PGender" id="PGender" >
                 <option value="M">Male</option>
                 <option value="F">Female</option>
                 <option value="O">Others</option>
@@ -144,8 +203,8 @@
             </p>
             
     
-            <p class="details input-box">
-                <span class="details" style="font-weight: 500;">Diseases that Mainly applies to you:</span><br>
+            <p class="input-box">
+                <span class="details" >Diseases that Mainly applies to you:</span><br>
                 <input type="checkbox" name='PDiseases' id='D' value="D">
                 <label for="D">Diabates</label><br>
                 <input type="checkbox" name='PDiseases' id='BP' value="BP">
@@ -156,8 +215,8 @@
                 <label for="OS">Oxygen Saturation Issues</label>
             </p>
 
-            <p>
-                <input type="submit" value="register" style="margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px;">
+            <p class="button">
+                <input type="submit" value="REGISTER" >
             </p>
         </div>
 
