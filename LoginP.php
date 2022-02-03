@@ -9,13 +9,13 @@
         echo('No stable database connection');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
 		//something was posted
-		$PUsername = $_POST['PUsername'];
-		$PPassword = $_POST['PPassword'];
+		$PUsername = $_GET['PUsername'];
+		$PPassword = $_GET['PPassword'];
 
-		if(isset($_POST['PUsername']) && isset($_POST['PPassword']))
+		if(isset($_GET['PUsername']) && isset($_GET['PPassword']))
 		{
 
 			//read from database
@@ -247,7 +247,7 @@ input:focus{
                     <hr>
                     <div class="orDiv">Or</div>
 
-                    <form method="POST" action="LoginP.php">
+                    <form method="get" action="LoginP.php">
                         <p class="text">Log In with your Account</p>
                         <p class="formGroup">
                             <i class="far fa-user"></i>
