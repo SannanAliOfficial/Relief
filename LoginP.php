@@ -29,12 +29,10 @@
 				if($result && mysqli_num_rows($result) > 0)
 				{
                     $user_data = mysqli_fetch_assoc($result);
-
-                    $_SESSION['PUsername'] = $PUsername;
-                    $_SESSION['success'] = "You are now logged in";
-
 					
 				}
+                $_SESSION['PUsername'] = $PUsername;
+                $_SESSION['success'] = "You are now logged in";
                 header("Location: Pportal.php");
 				die;
 			}
