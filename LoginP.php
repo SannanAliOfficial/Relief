@@ -12,11 +12,11 @@
     }
 
     
-    if($_SERVER['REQUEST_METHOD'] == "GET")
+    if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$PUsername = $_GET['PUsername'];
-        $PPassword = $_GET['PPassword'];
+		$PUsername = $_POST['PUsername'];
+        $PPassword = $_POST['PPassword'];
 
         if(empty($PUsername) or empty($PPassword))
             {
@@ -235,7 +235,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="GET" action="LoginP.php">
+    <form method="POST" action="LoginP.php">
         <div class="container">
             <dive class="formWraper">
      
