@@ -6,48 +6,52 @@
     $rpass = 'GAeI6ZJ9EC';
     $rdb = 'oGI7KynQVD';
     
-    if(! $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb ))
+    if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
     {
         echo('No stable database connection');
     }
 
     
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
 		//something was posted
-		$PUsername = $_POST['PUsername'];
-        $PPassword = $_POST['PPassword'];
+		$PUsername = $_GET['PUsername'];
+        $PPassword = $_GET['PPassword'];
 
-        if(isset($_POST['PUsername']) && isset($_POST['DPassword'])){
-            if(empty($PUsername) or empty($PPassword))
+        if(empty($PUsername) or empty($PPassword))
             {
 
                 //read from database
                 $query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' AND PPassword = '$PPassword'";
                 $result = mysqli_query($rdatabase, $query);
 
-                if(mysqli_num_rows($result)){
+                if($result)
+                {
+                    if($result && mysqli_num_rows($result) > 0)
+                    {
+                        $user_data = mysqli_fetch_assoc($result);
+                        
+                        
+                    }
                     $_SESSION['PUsername'] = $PUsername;
-                    $_SESSION['success'] = "logged in successfully";
-                    header("Location: Pportal.php");
+                    $_SESSION['success'] = "You are now logged in";
+                    header("Location: table.php");
+                    die;
                 }
-                else{
 
-                    echo "Wrong username or password";
-                }
+                echo "Invalid Username or Password";
 
 
             }else
             {
                 echo "Please Enter Username and Password!";
             }
+            
 
-        }
+        
 		
 	}
 ?>
-
-)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -231,7 +235,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="POST" action="LoginP.php">
+    <form method="GET" action="LoginP.php">
         <div class="container">
             <dive class="formWraper">
      
@@ -255,12 +259,12 @@ input:focus{
                     <p class="text">Sign In with your Account</p>
                     <div class="formGroup">
                         <i class="far fa-user"></i>
-                        <input type="text" name='PUsername' placeholder="UserName">
+                        <input type="text" name='PUsername' placeholder="UserName" required>
                     </div>
                     
                     <div class="formGroup">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name='PPassword' placeholder="Password">
+                        <input type="password" name='PPassword' placeholder="Password" required>
                     </div>
                     <div class="checkBox">
                         <input type="checkbox" name="checkbox" id="checkbox">
