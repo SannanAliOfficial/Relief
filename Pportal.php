@@ -44,11 +44,10 @@ if(isset($_GET['logout'])){
 
         <?php if(isset($_SESSION['PUsername'])) : ?>
         <h3>Welcome <strong><?php echo $_SESSION['PUsername']; ?></strong></h3>
-        <button><a href="Pportal.php?logout='1'"></a></button>
-
+        
         <?php endif ?>
 
-
+        <button><a href="Pportal.php?logout='1'"></a></button>
 
     </body>
 
