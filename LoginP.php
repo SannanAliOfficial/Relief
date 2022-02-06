@@ -11,34 +11,39 @@
         echo('No stable database connection');
     }
 
+    
     if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
 		$PUsername = $_POST['PUsername'];
         $PPassword = $_POST['PPassword'];
 
-		if(empty($PUsername) or empty($PPassword))
-		{
+        if(isset($_POST['PUsername']) && isset($_POST['DPassword'])){
+            if(empty($PUsername) or empty($PPassword))
+            {
 
-			//read from database
-			$query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' AND PPassword = '$PPassword'";
-			$result = mysqli_query($rdatabase, $query);
+                //read from database
+                $query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' AND PPassword = '$PPassword'";
+                $result = mysqli_query($rdatabase, $query);
 
-			if(mysqli_num_rows($result)){
-                $_SESSION['PUsername'] = $PUsername;
-                $_SESSION['success'] = "logged in successfully";
-                header("Location: Pportal.php");
+                if(mysqli_num_rows($result)){
+                    $_SESSION['PUsername'] = $PUsername;
+                    $_SESSION['success'] = "logged in successfully";
+                    header("Location: Pportal.php");
+                }
+                else{
+
+                    echo "Wrong username or password";
+                }
+
+
+            }else
+            {
+                echo "Please Enter Username and Password!";
             }
-            else{
 
-                echo "Wrong username or password";
-            }
-
-
-		}else
-		{
-			echo "Please Enter Username and Password!";
-		}
+        }
+		
 	}
 ?>
 
