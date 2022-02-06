@@ -39,7 +39,7 @@
 
   
 
-        header("Location: PPortal.php");
+        header("Location: Pportal.php");
         die;
       }
 
