@@ -17,35 +17,32 @@
 		$PUsername = $_POST['PUsername'];
         $PPassword = $_POST['PPassword'];
 
-		if(isset($_POST['PUsername']))
+		if(empty($PUsername) or empty($PPassword))
 		{
 
 			//read from database
 			$query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' AND PPassword = '$PPassword'";
 			$result = mysqli_query($rdatabase, $query);
 
-			if($result)
-			{
-				if($result && mysqli_num_rows($result) > 0)
-				{
-                    $user_data = mysqli_fetch_assoc($result);
-					
-				}
+			if(mysqli_num_rows($result)){
                 $_SESSION['PUsername'] = $PUsername;
-                $_SESSION['success'] = "You are now logged in";
+                $_SESSION['success'] = "logged in successfully";
                 header("Location: Pportal.php");
-				die;
-			}
-			
-			echo "Invalid Username or Password!";
+            }
+            else{
+
+                echo "Wrong username or password";
+            }
+
+            
 		}else
 		{
-			echo "Invalid form of Username or Password!";
+			echo "Please Enter Username and Password!";
 		}
 	}
 ?>
 
-
+)
 
 <!DOCTYPE html>
 <html lang="en">
