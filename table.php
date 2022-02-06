@@ -23,7 +23,7 @@
     <!-- fonts Awesome link  -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>BOOKING!</title> 
+    <title>Doctor's Portal | RELIEF </title> 
 </head>
 
 <style>
@@ -100,42 +100,7 @@
     $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb );
     
 
-    $query1 = "SELECT * FROM Pateints ORDER BY idPateints DESC LIMIT 1";
-    $data1 = mysqli_query($conn, $query1);
-    $result1 = mysqli_fetch_assoc($data1);
-    $city1 = $result1['PUsername'];
-    $city2 = $result1['PEmail'];
-
-
-
-    $query = "SELECT * FROM Pateints WHERE PUsername='$city1'  AND  PEmail='$city2'";
-    $data = mysqli_query($conn, $query);
-    $total = mysqli_num_rows($data);
-
-    $query2= "SELECT * FROM PDiseases";
-    $data2 = mysqli_query($conn, $query2);
-    // $total2 = mysqli_num_rows($data2);
-    // $result2 = mysqli_fetch_assoc($data2);
-    // $fdate = $result2['fdate'];
-    // $ftime = $result2['ftime'];
-    
-    if($total != 0){
-        while( $result= mysqli_fetch_assoc($data))
-        {   
-            while($result2 = mysqli_fetch_assoc($data2)){
-                echo"
-                <tr>
-                    <td>".$result['PUsername']."</td>
-                    <td>".$result['PEmail']."</td>
-                    <td>".$result2['PDisease']."</td>";
-                    echo "<td><a href='bookingform.php'><input class='btn btn-default' type='button' value='Book Now'></a></td>";
-                    echo"</td>"; 
-                    echo"</tr>";
-            }
-           
-
-        }  
-    }                         
+       
 ?>
     </table>
 

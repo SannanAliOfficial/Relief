@@ -1,5 +1,7 @@
 <?php
 
+  session_start();
+
   $ruser = 'oGI7KynQVD';
   $rpass = 'GAeI6ZJ9EC';
   $rdb = 'oGI7KynQVD';
@@ -30,6 +32,8 @@
           
           $query = "INSERT INTO Doctors (DFirst_name, DLast_name, DUsername , DEmail, DPhone_number, DPassword, DRe_Password, DSpeciality) VALUES ('$DFirst_name','$DLast_name', '$DUsername','$DEmail', '$DPhone_number','$DPassword', '$DRe_Password' , '$DSpeciality')";
           mysqli_query($rdatabase,$query);
+          $_SESSION['DUsername'] = $DUsername;
+          $_SESSION['success'] = "You are now logged in";
 
           header("Location: table.php");
           die;      

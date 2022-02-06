@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     $ruser = 'oGI7KynQVD';
     $rpass = 'GAeI6ZJ9EC';
     $rdb = 'oGI7KynQVD';
@@ -9,17 +11,17 @@
         echo('No stable database connection');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == "GET")
+    if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$DUsername = $_GET['DUsername'];
-		$DPassword = $_GET['DPassword'];
+		$DUsername = $_POST['DUsername'];
+		$DPassword = $_POST['DPassword'];
 
 		if(!empty($DUsername) && !empty($DPassword))
 		{
 
 			//read from database
-			$query = "SELECT * FROM Doctors WHERE DUsername = '$DUsername' lIMIT 1";
+			$query = "SELECT * FROM Doctors WHERE DUsername = '$DUsername' AND DPassword = '$DPassword'";
 			$result = mysqli_query($rdatabase, $query);
 
 			if($result)
@@ -27,7 +29,8 @@
 				if($result && mysqli_num_rows($result) > 0)
 				{
                     $user_data = mysqli_fetch_assoc($result);
-					
+					$_SESSION['DUsername'] = $DUsername;
+                    $_SESSION['success'] = "You are now logged in";
 					
 				}
                 header("Location: table.php");
@@ -250,12 +253,12 @@ input:focus{
                     <p class="text">Sign In with your Account</p>
                     <div class="formGroup">
                         <i class="far fa-user"></i>
-                        <input type="text" name='DUsername' placeholder="UserName">
+                        <input type="text" name='DUsername' placeholder="UserName" required>
                     </div>
                     
                     <div class="formGroup">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name='DPassword' placeholder="Password">
+                        <input type="password" name='DPassword' placeholder="Password" required>
                     </div>
                     <div class="checkBox">
                         <input type="checkbox" name="checkbox" id="checkbox">

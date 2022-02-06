@@ -1,5 +1,7 @@
 <?php
 
+  session_start();
+
   $ruser = 'oGI7KynQVD';
   $rpass = 'GAeI6ZJ9EC';
   $rdb = 'oGI7KynQVD';
@@ -32,8 +34,12 @@
       {
         $query = "INSERT INTO Pateints (PFirst_name, PLast_name, PUsername, PDOB , PEmail, PPhone_number, PAddress, PPassword, PRe_Password, PGender, PDiseases) VALUES ('$PFirst_name','$PLast_name', '$PUsername', '$PDOB' ,'$PEmail', '$PPhone_number', '$PAddress' ,'$PPassword', '$PRe_Password' , '$PGender', '$PDiseases')";
         mysqli_query($rdatabase,$query);
+        $_SESSION['PUsername'] = $PUsername;
+        $_SESSION['success'] = 'You are logged in';
 
-        header("Location: PPortal.html");
+  
+
+        header("Location: PPortal.php");
         die;
       }
 

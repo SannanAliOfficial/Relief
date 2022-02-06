@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     $ruser = 'oGI7KynQVD';
     $rpass = 'GAeI6ZJ9EC';
     $rdb = 'oGI7KynQVD';
@@ -9,16 +11,17 @@
         echo('No stable database connection');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == "GET")
+    if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$PUsername = $_GET['PUsername'];
+		$PUsername = $_POST['PUsername'];
+        $PPassword = $_POST['PPassword'];
 
-		if(isset($_GET['PUsername']))
+		if(isset($_POST ['PUsername']))
 		{
 
 			//read from database
-			$query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' LIMIT 1";
+			$query = "SELECT * FROM Pateints WHERE PUsername = '$PUsername' AND PPassword = '$PPassword'";
 			$result = mysqli_query($rdatabase, $query);
 
 			if($result)
@@ -26,10 +29,13 @@
 				if($result && mysqli_num_rows($result) > 0)
 				{
                     $user_data = mysqli_fetch_assoc($result);
-					
+
+                    $_SESSION['PUsername'] = $PUsername;
+                    $_SESSION['success'] = "You are now logged in";
+
 					
 				}
-                header("Location: PPortal.html");
+                header("Location: PPortal.php");
 				die;
 			}
 			
@@ -249,12 +255,12 @@ input:focus{
                     <p class="text">Sign In with your Account</p>
                     <div class="formGroup">
                         <i class="far fa-user"></i>
-                        <input type="text" name='PUsername' placeholder="UserName">
+                        <input type="text" name='PUsername' placeholder="UserName" required>
                     </div>
                     
                     <div class="formGroup">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name='PPassword' placeholder="Password">
+                        <input type="password" name='PPassword' placeholder="Password" required>
                     </div>
                     <div class="checkBox">
                         <input type="checkbox" name="checkbox" id="checkbox">
