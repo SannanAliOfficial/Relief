@@ -26,7 +26,7 @@ if(isset($_GET['logout'])){
 
     <body>
         <?php
-        if(isset($_SESSION['success'])) : ?>
+        if(isset($_SESSION['success']) && isset($_SESSION['PUsername'])) : ?>
          
         <div>
             <h3>
