@@ -81,7 +81,7 @@
 </head>
 
 <body>
-    <form method="post" action="test.php" style=" position: fixed;">
+    <form method="post" action="signupP.php" style=" position: fixed;">
         <div class="container">
             <p class="title">SIGNUP FORM</p><br>
             <div>
