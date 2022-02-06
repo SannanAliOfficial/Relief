@@ -11,13 +11,13 @@
         echo('No stable database connection');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
 		//something was posted
-		$PUsername = $_POST['PUsername'];
-        $PPassword = $_POST['PPassword'];
+		$PUsername = $_GET['PUsername'];
+        $PPassword = $_GET['PPassword'];
 
-		if(isset($_POST ['PUsername']))
+		if(isset($_GET ['PUsername']))
 		{
 
 			//read from database

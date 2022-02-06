@@ -11,11 +11,11 @@
         echo('No stable database connection');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
 		//something was posted
-		$DUsername = $_POST['DUsername'];
-		$DPassword = $_POST['DPassword'];
+		$DUsername = $_GET['DUsername'];
+		$DPassword = $_GET['DPassword'];
 
 		if(!empty($DUsername) && !empty($DPassword))
 		{
