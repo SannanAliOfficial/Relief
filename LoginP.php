@@ -34,7 +34,7 @@
                 echo "Wrong username or password";
             }
 
-            
+
 		}else
 		{
 			echo "Please Enter Username and Password!";
@@ -226,7 +226,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="GET" action="LoginP.php">
+    <form method="POST" action="LoginP.php">
         <div class="container">
             <dive class="formWraper">
      
