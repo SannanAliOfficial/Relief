@@ -2,13 +2,13 @@
 session_start();
 if(isset($_SESSION['PUsername'])){
     $_SESSION['msg'] = 'you must log in to view this page';
-    header("location : LoginP.php");
+    header("Location: LoginP.php");
 }
 
 if(isset($_GET['logout'])){
     session_destroy(); 
     unset($_SESSION['PUsername']);
-    header("location : LoginP.php");
+    header("Location: LoginP.php");
 } 
 
 
