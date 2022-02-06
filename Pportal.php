@@ -25,6 +25,7 @@ if(isset($_GET['logout'])){
     </head>
 
     <body>
+        <button><a href="Pportal.php?logout='1'"></a></button>
         <?php
         if(isset($_SESSION['success']) && isset($_SESSION['PUsername'])) : ?>
          
@@ -47,7 +48,7 @@ if(isset($_GET['logout'])){
         
         <?php endif ?>
 
-        <button><a href="Pportal.php?logout='1'"></a></button>
+        
 
     </body>
 
