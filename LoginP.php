@@ -259,17 +259,14 @@ input:focus{
                     <p class="text">Sign In with your Account</p>
                     <div class="formGroup">
                         <i class="far fa-user"></i>
-                        <input type="text" name='PUsername' placeholder="UserName" required>
+                        <input type="text" name='PUsername' placeholder="UserName">
                     </div>
                     
                     <div class="formGroup">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name='PPassword' placeholder="Password" required>
+                        <input type="password" name='PPassword' placeholder="Password">
                     </div>
-                    <div class="checkBox">
-                        <input type="checkbox" name="checkbox" id="checkbox">
-                        <span class="text">I Agree with Term & Conditions.</span>
-                    </div>
+                    
                     <button class="btn" type="submit" value="Submit">SIGN IN</button>
                     <p class="text">Already have an account?   <a href="signupP.php">REGESTER NOW!</a></p>
                 </div>
