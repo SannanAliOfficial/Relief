@@ -31,15 +31,24 @@ if(isset($_GET['logout'])){
         <div>
             <h3>
                 <?php 
+                
                     echo $_SESSION['success'];
                     unset($_SESSION['success']);
 
 
-                    echo $_SESSION['PUsername'];
+                    
                 ?>
             </h3>
         </div>    
         <?php endif ?>
+
+        <?php if(isset($_SESSION['PUsername'])) : ?>
+        <h3>Welcome <strong><?php echo $_SESSION['PUsername']; ?></strong></h3>
+        <button><a href="Pportal.php?logout='1'"></a></button>
+
+        <?php endif ?>
+
+
 
     </body>
 
