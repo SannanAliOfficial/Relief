@@ -35,7 +35,7 @@
                     }
                     $_SESSION['PUsername'] = $PUsername;
                     $_SESSION['success'] = "You are now logged in";
-                    header("Location: table.php");
+                    header("Location: Pportal.php");
                     die;
                 }
 
