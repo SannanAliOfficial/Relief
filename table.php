@@ -32,7 +32,8 @@
     h1{
         text-align: center;
         text-transform: capitalize;
-        padding-top: 20px;
+        padding-top: 40px;
+        font-weight: bold;
 
     }
     body{
