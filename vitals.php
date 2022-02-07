@@ -208,7 +208,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
  </style>
 <body>
-    <div class="form">
+      <div class="form" style="display: flex;">
 
         <div>
             <div class="title"><?php echo $row['PUsername'] ?></div>
@@ -261,6 +261,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
         
     
-    </div>
+      </div>
 </body>
 </html>
