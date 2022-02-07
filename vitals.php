@@ -176,6 +176,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   color: #dc2f55;
 }
 
+.new{
+  padding-right: 100px;
+  padding-top: 50px;
+
+}
+
+.new2{
+  padding-bottom: 100px;
+}
+
 .submit {
   background-color: #08d;
   border-radius: 12px;
@@ -197,7 +207,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
  </style>
 <body>
-    <div style="display: flex;" class="form">
+    <div class="form">
 
         <div>
             <div class="title"><?php echo $row['PUsername'] ?></div>
@@ -231,8 +241,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             
         </div>
 
-        <div style="padding-left: 150px;">
-            <form method="post" action="vitals.php" style="padding-bottom: 100px;">
+        <div class="new">
+            <form method="post" action="vitals.php" class="new2">
                 <p class="input-container ic1">
                   <input name="PPriscription" class="input" type="text" placeholder="ADD NEW PRISCRIPTION " /><br>
                   <input class="submit" type="submit" value="+ PRISCRIPTION  ">
