@@ -68,7 +68,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 </head>
  <style>
      body {
-   background-image: url(./Medical/images/blog2.jpg);
+   background-image: url(images/blog2.jpg);
    background-size: cover;
   align-items: center;
   background-color: #000;
