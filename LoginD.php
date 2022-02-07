@@ -3,7 +3,7 @@
     session_start();
 
     $ruser = 'oGI7KynQVD';
-    $rpass = 'GAeI6ZJ9EC';
+    $rpass = 'GAeI6ZJ9EC'; 
     $rdb = 'oGI7KynQVD';
     
     if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))

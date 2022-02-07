@@ -11,14 +11,13 @@
         echo('No stable database connection');
     }
 
-    
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
 		//something was posted
-		$PUsername = $_POST['PUsername'];
-        $PPassword = $_POST['PPassword'];
+		$PUsername = $_GET['PUsername'];
+        $PPassword = $_GET['PPassword'];
 
-        if(empty($PUsername) or empty($PPassword))
+        if(!empty($PUsername) or !empty($PPassword))
             {
 
                 //read from database
@@ -235,7 +234,7 @@ input:focus{
 </style>
  
 <body>
-    <form method="POST" action="LoginP.php">
+    <form method="GET" action="LoginP.php">
         <div class="container">
             <dive class="formWraper">
      
