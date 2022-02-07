@@ -5,6 +5,8 @@
      <!-- Required meta tags -->
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" href="images/logo.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -33,11 +35,19 @@
         padding-top: 20px;
 
     }
-    body {
-        background-color: lightgrey;
-        font-family: Arial, Verdana, sans-serif;
-        color: teal;
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        background-image: url(./images/booking-bg.jpg);
+        background-size:cover;
+        background-attachment:fixed;
     }
+
+
     table {
     width: 780px; 
 	border-collapse: collapse; 
@@ -86,10 +96,11 @@
     <table border="3">
 
             <tr>
-                <th width="50">Patient Id</th>
+                <th width="100">Patient Id</th>
                 <th width="200">Patient Username</th>
+                <th width="200">Email</th>
                 <th width="100">Year of Birth</th>
-                <th width="200">Diesease</th>
+                <th width="100">Diesease</th>
                 <th width="50">Gender</th>
             </tr>
         <?php
@@ -110,6 +121,7 @@
                 <tr>
                     <td><?php echo $rows['idPateints']; ?></td>
                     <td><?php echo $rows['PUsername']; ?></td>
+                    <td><?php echo $rows['PEmail']; ?></td>
                     <td><?php echo $rows['PDOB']; ?></td>
                     <td><?php echo $rows['PDiseases']; ?></td>
                     <td><?php echo $rows['PGender']; ?></td>
