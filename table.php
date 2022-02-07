@@ -38,7 +38,7 @@
     }
     body{
         height: 100vh;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         padding: 10px;
