@@ -17,7 +17,7 @@
 		$PUsername = $_GET['PUsername'];
         $PPassword = $_GET['PPassword'];
 
-        if(!empty($PUsername) or !empty($PPassword))
+        if(isset($PUsername) && isset($PPassword))
             {
 
                 //read from database
