@@ -28,10 +28,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
   $PPriscription = $_POST['PPriscription'];
   $PNotes = $_POST['PNotes'];
+  $idPateints = $ID;
+  $idPateintss = $ID;
 
   if(isset($_POST['PPriscription'])){
 
-    $query = "INSERT INTO Priscription (PPriscription) VALUE ('$PPriscription')";
+    $query = "INSERT INTO Priscription (PPriscription, idPateintss) VALUE ('$PPriscription','$ID')";
     mysqli_query($rdatabase,$query);
 
   }
@@ -41,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
   if(isset($_POST['PNotes'])){
 
-    $query2 = "INSERT INTO Notes (PNotes) VALUE ('$PNotes')";
+    $query2 = "INSERT INTO Notes (PNotes, idPateints) VALUE ('$PNotes','$ID')";
     mysqli_query($rdatabase,$query2);
 
   }
@@ -67,47 +69,84 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <title>Document</title>
 </head>
  <style>
-     body {
-   background-image: url(images/blog2.jpg);
-   background-size: cover;
-  align-items: center;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-}
+  body {
+    background-image: url(images/blog2.jpg);
+    background-size: cover;
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
 
-.form {
-  background-color: #15172b;
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 500px;
-  padding: 50px;
-  width: 700px;
-  
-}
-
-.title {
-  color: #eee;
-  font-family: sans-serif;
-  font-size: 25px;
-  font-weight: 600;
- 
-}
-
-
-
- </style>
-<body>
-      <div class="form" style="display: flex;">
-
-        <div>
-            <div class="title"><?php echo $row['PUsername'] ?></div>
+  .form {
+    background-color: #1b1e41;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 50px;
+    width: 700px;
+    display:flex;
     
-            <div class="input-container ic1">
-              <P style="color: azure;">PATIENT'S VITALS FOR : <?php echo $row['PDiseases'] ?></P>
+  }
+
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+  
+  }
+
+  table {
+    width: 300px; 
+	border-collapse: collapse; 
+	margin:10px auto;
+    background-color: rgba(0, 128, 128, 0.548);
+    }
+    td {
+        padding: 20px 10px 15px 15px;
+        color: black;
+    }
+    th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-top: 1px solid #999;
+    text-align: left;
+    padding: 20px 10px 15px 15px;
+    background-color: #fff;
+    }
+    tr.even {
+    background-color: #efefef;
+    }
+    tr:hover {
+        background-color: #ffff;
+        color: teal;    
+    }
+
+  .input-container {
+    height: 50px;
+    width: 100%;
+  }
+
+  .ic1 {
+    margin-top: 40px;
+  }
+
+
+
+</style>
+<body>
+  <div class="form">
+
+    <div>
+      <div class="title"><?php echo $row['PUsername'] ?></div>
+    
+        <div class="input-container ic1">
+          <P style="color: azure;">PATIENT'S VITALS FOR : <?php echo $row['PDiseases'] ?></P>
               
-              <table border="3">
+            <table border="3">
 
                 <tr>
                   <th width="50">Date Time</th>
@@ -129,29 +168,30 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     
                 ?>
 
-            </div>
-            
         </div>
+            
+      </div>
 
-        <div class="new">
-            <form method="post" action="vitals.php" class="new2">
-                <p class="input-container ic1">
+      <div>
+        <form method="post" action="vitals.php">
+          <p class="input-container ic1">
                   <input name="PPriscription" class="input" type="text" placeholder="ADD NEW PRISCRIPTION " /><br>
                   <input class="submit" type="submit" value="+ PRISCRIPTION  ">
-                </p>
-            </form>
-            <form method="post" action="vitals.php">
+          </p>
+        </form>
+        <form method="post" action="vitals.php">
         
-                <p class="input-container ic1">
+          <p class="input-container ic1">
                   <input name="PNotes" class="input" type="text" placeholder="ADD A NOTE " /><br>
                   <input class="submit" type="submit" value="+ ADD NOTE  ">
-                </div> <br>
+        
+          </p>
 
-            </form>
-        </div>
+        </form>
+      </div>
 
         
     
-      </div>
+    </div>
 </body>
 </html>
