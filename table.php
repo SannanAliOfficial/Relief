@@ -122,7 +122,7 @@
 
                 <tr>
                     <td><?php echo $rows['idPateints']; ?></td>
-                    <td><?php echo "<a href='vitals.php?id={$rows['idPateints']}' >{$rows['PUsername']}</a>"; ?></td>
+                    <td><?php echo "<a href='vitals.php?ID={$rows['idPateints']}' >{$rows['PUsername']}</a>"; ?></td>
                     <td><?php echo $rows['PEmail']; ?></td>
                     <td><?php echo $rows['PDOB']; ?></td>
                     <td><?php echo $rows['PDiseases']; ?></td>
