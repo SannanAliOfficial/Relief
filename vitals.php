@@ -26,6 +26,8 @@ if (isset($_GET['ID'])) {
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
+  $ID = mysqli_real_escape_string($rdatabase, $_GET['ID']);
+
   $PPriscription = $_POST['PPriscription'];
   $PNotes = $_POST['PNotes'];
   $idPateint = isset($ID);
