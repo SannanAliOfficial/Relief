@@ -90,7 +90,7 @@ session_start();
         <div class="form">
 
             <div>
-                <div class="title"><?php echo $row['PUsername'] ?></div>
+                <div class="title"><?php echo($_SESSION['PUsername']) ?></div>
                 
                     <div class="input-container ic1">
                     <P style="color: rgb(21, 24, 24); margin-top: -39px;">PATIENT'S VITALS FOR : <?php echo $row['PDiseases'] ?></P>
