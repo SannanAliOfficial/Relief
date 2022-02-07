@@ -1,12 +1,5 @@
 <?php
 session_start();
-if(isset($_SESSION['PUsername'])){
-    $_SESSION['msg'] = 'you must log in to view this page';
-    header("Location: LoginP.php");
-}
-
-
-
 
 ?>
 
