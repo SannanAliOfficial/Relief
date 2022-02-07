@@ -98,7 +98,7 @@
             $rpass = 'GAeI6ZJ9EC';
             $rdb = 'oGI7KynQVD';
 
-            $rdatabase = new msqli('remotemysql.com', $ruser , $rpass, $rdb );
+            $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb );
             $query = "SELECT * FROM Pateints";
 
             $result = mysqli_query($rdatabase,$query);
