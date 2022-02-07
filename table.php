@@ -86,22 +86,42 @@
     <table border="3">
 
             <tr>
-                <th width="200">Patient Id</th>
+                <th width="50">Patient Id</th>
                 <th width="200">Patient Username</th>
                 <th width="100">Year of Birth</th>
+                <th width="200">Diesease</th>
                 <th width="50">Gender</th>
             </tr>
-<?php
-    
-    $ruser = 'oGI7KynQVD';
-    $rpass = 'GAeI6ZJ9EC';
-    $rdb = 'oGI7KynQVD';
+        <?php
+            
+            $ruser = 'oGI7KynQVD';
+            $rpass = 'GAeI6ZJ9EC';
+            $rdb = 'oGI7KynQVD';
 
-    $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb );
+            $rdatabase = new msqli('remotemysql.com', $ruser , $rpass, $rdb );
+            $query = "SELECT * FROM Pateints";
+
+            $result = mysqli_query($rdatabase,$query);
+
+            while($rows = mysqli_fetch_assoc($result))
+            {
+        ?>
+
+                <tr>
+                    <td><?php echo $rows['idPateints']; ?></td>
+                    <td><?php echo $rows['PUsername']; ?></td>
+                    <td><?php echo $rows['PDOB']; ?></td>
+                    <td><?php echo $rows['PDiseases']; ?></td>
+                    <td><?php echo $rows['PGender']; ?></td>
+                </tr>
+
+        <?php 
+            }
+        ?>
+
     
 
        
-?>
     </table>
 
 <!-- Optional JavaScript -->
