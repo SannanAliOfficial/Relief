@@ -35,6 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     $query = "INSERT INTO Priscription (PPriscription, idPateintss) VALUE ('$PPriscription','$ID')";
     mysqli_query($rdatabase,$query);
+    echo ("Input successful");
 
   }
   else{
@@ -45,6 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     $query2 = "INSERT INTO Notes (PNotes, idPateints) VALUE ('$PNotes','$ID')";
     mysqli_query($rdatabase,$query2);
+    echo("Input Successful");
 
   }
   else{
