@@ -84,6 +84,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   height: 500px;
   padding: 50px;
   width: 700px;
+  display: flex;
   
 }
 
@@ -107,6 +108,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   height: 50px;
   position: relative;
   width: 100%;
+  padding-top: 100px;
 }
 
 .ic1 {
