@@ -4,6 +4,11 @@
 
     </head>
     <body>
-        <h1>SUCCESSFULL!!!</h1>
+        <?php
+            echo $rows['PUsername'];
+        
+        
+        
+        ?>
     </body>
 </html>
