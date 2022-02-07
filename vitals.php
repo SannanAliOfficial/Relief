@@ -28,12 +28,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
   $PPriscription = $_POST['PPriscription'];
   $PNotes = $_POST['PNotes'];
-  $idPateints = $ID;
-  $idPateintss = $ID;
+  $idPateint = isset($ID);
+  $idPateintss = isset($ID);
 
   if(isset($_POST['PPriscription'])){
 
-    $query = "INSERT INTO Priscription (PPriscription, idPateintss) VALUE ('$PPriscription','$ID')";
+    $query = "INSERT INTO Priscription (PPriscription, idPateint) VALUE ('$PPriscription','$idPateint')";
     mysqli_query($rdatabase,$query);
     echo ("Input successful");
 
@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
   if(isset($_POST['PNotes'])){
 
-    $query2 = "INSERT INTO Notes (PNotes, idPateints) VALUE ('$PNotes','$ID')";
+    $query2 = "INSERT INTO Notes (PNotes, idPateintss) VALUE ('$PNotes','$idPateintss')";
     mysqli_query($rdatabase,$query2);
     echo("Input Successful");
 
