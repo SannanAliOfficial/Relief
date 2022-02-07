@@ -105,7 +105,8 @@
                 <th width="50">Gender</th>
             </tr>
         <?php
-            
+            session_start();
+
             $ruser = 'oGI7KynQVD';
             $rpass = 'GAeI6ZJ9EC';
             $rdb = 'oGI7KynQVD';
@@ -120,7 +121,7 @@
         ?>
 
                 <tr>
-                    <td><?php echo $rows['idPateints']; ?></td>
+                    <button><td><?php echo $rows['idPateints']; ?></td></button>
                     <td><?php echo $rows['PUsername']; ?></td>
                     <td><?php echo $rows['PEmail']; ?></td>
                     <td><?php echo $rows['PDOB']; ?></td>
@@ -130,6 +131,7 @@
 
         <?php 
             }
+            
         ?>
 
     
