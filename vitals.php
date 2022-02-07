@@ -84,7 +84,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   height: 500px;
   padding: 50px;
   width: 700px;
-  display: flex;
   
 }
 
