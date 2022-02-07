@@ -26,13 +26,18 @@ if (isset($_GET['ID'])) {
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
+  $ID = mysqli_real_escape_string($rdatabase, $_GET['ID']);
+
   $PPriscription = $_POST['PPriscription'];
   $PNotes = $_POST['PNotes'];
+  $idPateint = $ID;
+  $idPateintss = $ID;
 
   if(isset($_POST['PPriscription'])){
 
-    $query = "INSERT INTO Priscription (PPriscription) VALUE ('$PPriscription')";
+    $query = "INSERT INTO Priscription (PPriscription, idPateint) VALUE ('$PPriscription','$idPateint')";
     mysqli_query($rdatabase,$query);
+    echo ("Input successful");
 
   }
   else{
@@ -41,8 +46,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
   if(isset($_POST['PNotes'])){
 
-    $query2 = "INSERT INTO Notes (PNotes) VALUE ('$PNotes')";
+    $query2 = "INSERT INTO Notes (PNotes, idPateintss) VALUE ('$PNotes','$idPateintss')";
     mysqli_query($rdatabase,$query2);
+    echo("Input Successful");
 
   }
   else{
@@ -104,7 +110,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     }
     td {
         padding: 20px 10px 15px 15px;
-        color: rgb(236, 223, 223);
+        color: black;
     }
     th {
     text-transform: uppercase;
@@ -120,7 +126,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     }
     tr:hover {
         background-color: #ffff;
-        color: rgb(188, 240, 240);    
+        color: teal;    
     }
 
   .input-container {
@@ -129,7 +135,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   }
 
   .ic1 {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
 
@@ -147,10 +153,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <table border="3">
 
                 <tr>
-                  <th width="100">Date Time</th>
-                  <th width="">Vitals</th>
+                  <th width="50">Date Time</th>
+                  <th width="50">Vitals</th>
                 </tr>
-            
 
                 <?php
                     while($rows = mysqli_fetch_assoc($result2))
@@ -166,24 +171,23 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     }
                     
                 ?>
-            </table>
+
         </div>
             
       </div>
 
-      <div style="margin-left: 50px;">
-        <form method="post" action="vitals.php" style="margin-left: 50px;" >
+      <div>
+        <form method="post" action="vitals.php">
           <p class="input-container ic1">
-                  <input name="PPriscription" class="input" type="text" placeholder="ADD NEW PRISCRIPTION " style="height: 70px;"/><br>
-                <br>  <input class="submit" type="submit" value="+ PRISCRIPTION  " style="height: 60px;"><br>
+                  <input name="PPriscription" class="input" type="text" placeholder="ADD NEW PRISCRIPTION " /><br>
+                  <input class="submit" type="submit" value="+ PRISCRIPTION  ">
           </p>
-        </form><br><br>
-
-        <form method="post" action="vitals.php" style="margin-left: 50px; height: 90px;">
+        </form>
+        <form method="post" action="vitals.php">
         
           <p class="input-container ic1">
-                  <input name="PNotes" class="input" type="text" placeholder="ADD A NOTE " style="height: 70px;" /><br>
-                  <br><input class="submit" type="submit" value="+ ADD NOTE  " style="height: 60px;">
+                  <input name="PNotes" class="input" type="text" placeholder="ADD A NOTE " /><br>
+                  <input class="submit" type="submit" value="+ ADD NOTE  ">
         
           </p>
 
@@ -193,6 +197,5 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         
     
     </div>
-      
 </body>
 </html>
