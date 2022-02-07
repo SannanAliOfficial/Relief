@@ -121,8 +121,8 @@
         ?>
 
                 <tr>
-                    <button><td><?php echo $rows['idPateints']; ?></td></button>
-                    <td><?php echo $rows['PUsername']; ?></td>
+                    <td><?php echo $rows['idPateints']; ?></td>
+                    <td><a href="vitals.php"><?php echo $rows['PUsername']; ?></a></td>
                     <td><?php echo $rows['PEmail']; ?></td>
                     <td><?php echo $rows['PDOB']; ?></td>
                     <td><?php echo $rows['PDiseases']; ?></td>
