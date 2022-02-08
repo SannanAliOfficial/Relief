@@ -120,7 +120,7 @@
                             
                 </div>
                         
-            </div>
+            </div><br><br><br>
 
             <div>
                 <form method="post" action="vitals.php"  >
