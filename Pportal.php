@@ -109,15 +109,12 @@
         <div class="form">
 
             <div>
-
-                <?php
-                    if(isset($_SESSION['username'])) : ?>
+                    
                 
-                    <div class="title">
-                        <p> WELCOME <strong><?php echo $_SESSION['username']; ?></strong></p>      
-                    </div>
-                
-                <?php endif ?>
+                <div class="title">
+                    <p> WELCOME <strong>AreebaA</strong></p>      
+                </div>
+    
                 <div class="input-container ic1">
                     <P style="color: rgb(21, 24, 24); margin-top: -39px;">View All Information here.</P>
                             
@@ -144,21 +141,6 @@
                                 <tr>
                                     <th>Priscriptions</th>
                                 </tr>
-                                <?php
-
-                                    if(isset($result)){
-                                        $query3 = "SELECT * FROM Priscription WHERE idPateint = '$result' DESC";
-                                        $pris = mysqli_query($rdatabase, $query3);
-                                    }
-                                    while($rows2 = mysqli_fetch_assoc($pris)){
-                                ?>
-
-                                    <tr>
-                                        <td><?php echo $rows2['PNotes']; ?></td>
-                                    </tr>
-                                <?php 
-                                    }
-                                ?>
                             </table>
                         </div>
                         <br> 
@@ -176,21 +158,6 @@
                                 <tr>
                                     <th>Notes:</th>
                                 </tr>
-                                <?php
-
-                                    if(isset($result)){
-                                        $query2 = "SELECT * FROM Notes WHERE idPateintss = '$result' DESC";
-                                        $notes = mysqli_query($rdatabase, $query2);
-                                    }
-                                    while($rows = mysqli_fetch_assoc($notes)){
-                                ?>
-
-                                    <tr>
-                                        <td><?php echo $rows['PNotes']; ?></td>
-                                    </tr>
-                                <?php 
-                                    }
-                                ?>
                             </table>
                         </div>
                         <br> 
