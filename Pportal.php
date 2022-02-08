@@ -12,14 +12,13 @@
     $PUsername = $_SESSION['username'];
   }
 
-  $query = "SELECT idPateints FROM Pateints WHERE PUsername = '$PUsername'";
-  $result = mysqli_query($rdatabase, $query);
+  if(isset($PUsername)){
+      
+    $query = "SELECT idPateints FROM Pateints WHERE PUsername = '$PUsername'";
+    $result = mysqli_query($rdatabase, $query);
+    $results = mysqli_fetch_assoc($result);
+  }
   
-  $query2 = "SELECT * FROM Notes WHERE idPateintss = '$result' DESC";
-  $notes = mysqli_query($rdatabase, $query2);
-
-  $query3 = "SELECT * FROM Priscription WHERE idPateint = '$result' DESC";
-  $pris = mysqli_query($rdatabase, $query3);
 
 ?>
 
@@ -143,6 +142,11 @@
                         <div>
                             <table>
                                 <?php
+
+                                    if(isset($result)){
+                                        $query3 = "SELECT * FROM Priscription WHERE idPateint = '$result' DESC";
+                                        $pris = mysqli_query($rdatabase, $query3);
+                                    }
                                     while($rows2 = mysqli_fetch_assoc($pris)){
                                 ?>
 
@@ -167,6 +171,11 @@
                         <div>
                             <table>
                                 <?php
+
+                                    if(isset($result)){
+                                        $query2 = "SELECT * FROM Notes WHERE idPateintss = '$result' DESC";
+                                        $notes = mysqli_query($rdatabase, $query2);
+                                    }
                                     while($rows = mysqli_fetch_assoc($notes)){
                                 ?>
 
