@@ -141,6 +141,9 @@
                         </div>
                         <div>
                             <table>
+                                <tr>
+                                    <th>Priscriptions</th>
+                                </tr>
                                 <?php
 
                                     if(isset($result)){
@@ -170,6 +173,9 @@
                         </div>
                         <div>
                             <table>
+                                <tr>
+                                    <th>Notes:</th>
+                                </tr>
                                 <?php
 
                                     if(isset($result)){
