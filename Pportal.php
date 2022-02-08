@@ -138,7 +138,7 @@
                         </div>
                         <div>
                             <table>
-                                <tr>
+                                <br><br><tr>
                                     <th>Priscriptions</th>
                                 </tr>
                             </table>
