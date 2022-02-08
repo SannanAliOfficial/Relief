@@ -1,5 +1,25 @@
 <?php
-session_start();
+  session_start();
+
+  $ruser = 'oGI7KynQVD';
+  $rpass = 'GAeI6ZJ9EC';
+  $rdb = 'oGI7KynQVD';
+    
+  $rdatabase = mysqli_connect('remotemysql.com', $ruser , $rpass, $rdb );
+
+  if(isset($_SESSION['username']))
+  {
+    $PUsername = $_SESSION['username'];
+  }
+
+  $query = "SELECT idPateints FROM Pateints WHERE PUsername = '$PUsername'";
+  $result = mysqli_query($rdatabase, $query);
+  
+  $query2 = "SELECT * FROM Notes WHERE idPateintss = '$result' DESC";
+  $notes = mysqli_query($rdatabase, $query2);
+
+  $query3 = "SELECT * FROM Priscription WHERE idPateint = '$result' DESC";
+  $pris = mysqli_query($rdatabase, $query3);
 
 ?>
 
@@ -90,47 +110,77 @@ session_start();
         <div class="form">
 
             <div>
-                <div class="title"><?php echo($_SESSION['PUsername']) ?></div>
+
+                <?php
+                    if(isset($_SESSION['username'])) : ?>
                 
-                    <div class="input-container ic1">
+                    <div class="title">
+                        <p> WELCOME <strong><?php echo $_SESSION['username']; ?></strong></p>      
+                    </div>
+                
+                <?php endif ?>
+                <div class="input-container ic1">
                     <P style="color: rgb(21, 24, 24); margin-top: -39px;">View All Information here.</P>
                             
-                    </div>
-                        
                 </div>
+                        
+            </div>
 
             <div>
                 <form method="post" action="vitals.php"  >
                     <p class="input-container ic1">
-                    <input name="PPriscription" class="input" type="text" placeholder="ENTER VITALS " style="height: 70px; margin-left: -179px;"/><br>
+                    <input name="PVitals" class="input" type="text" placeholder="ENTER VITALS " style="height: 70px; margin-left: -179px;"/><br>
                     <br>  <input class="submit" type="submit" value="+ VITALS  " style="height: 60px; margin-left: -179px"><br>
                     </p>
                 </form><br><br><br>
 
-                <form method="post" action="vitals.php">
+                <div>
                 
                     <p class="input-container ic1">
                         <div>    
-                        <h3 style="margin-top: -260px;margin-left: 150px;">PRISCRIPTION:</h3>
+                            <h3 style="margin-top: -260px;margin-left: 150px;">PRISCRIPTION:</h3>
                         </div>
-                        <div></div>
+                        <div>
+                            <table>
+                                <?php
+                                    while($rows2 = mysqli_fetch_assoc($pris)){
+                                ?>
+
+                                    <tr>
+                                        <td><?php echo $rows2['PNotes']; ?></td>
+                                    </tr>
+                                <?php 
+                                    }
+                                ?>
+                            </table>
+                        </div>
                         <br> 
                     </p>
-
-                
-
-                </form>
+                </div>
                 <br> <br>
-                <form method="post" action="vitals.php">
+                <div>
                 
                     <p class="input-container ic1">
                         <div>    
-                        <h3 style="margin-top: -260px;margin-left: 150px;">Notes:</h3>
+                            <h3 style="margin-top: -260px;margin-left: 150px;">Notes:</h3>
                         </div>
-                        <div></div>
+                        <div>
+                            <table>
+                                <?php
+                                    while($rows = mysqli_fetch_assoc($notes)){
+                                ?>
+
+                                    <tr>
+                                        <td><?php echo $rows['PNotes']; ?></td>
+                                    </tr>
+                                <?php 
+                                    }
+                                ?>
+                            </table>
+                        </div>
                         <br> 
                     </p>
-                </form>
+                </div>
             </div>
 
             
