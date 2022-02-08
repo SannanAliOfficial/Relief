@@ -125,7 +125,7 @@
             <div>
                 <form method="post" action="vitals.php"  >
                     <p class="input-container ic1">
-                    <input name="PVitals" class="input" type="text" placeholder="ENTER VITALS " style="height: 70px; margin-left: -179px;"/><br>
+                    <br><br><input name="PVitals" class="input" type="text" placeholder="ENTER VITALS " style="height: 70px; margin-left: -179px;"/><br>
                     <br>  <input class="submit" type="submit" value="+ VITALS  " style="height: 60px; margin-left: -179px"><br>
                     </p>
                 </form><br><br><br>
